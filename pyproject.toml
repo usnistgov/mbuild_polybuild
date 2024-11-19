@@ -21,7 +21,7 @@ maintainers = [
     {name = "Debra J. Audus", email = "debra.audus@nist.gov"},
 ]
 # See https://pypi.org/classifiers/
-classifiers = ["License :: Other/Proprietary License", 
+classifiers = ["License :: Other/Proprietary License",
     "Programming Language :: Python :: 3",
 ]
 requires-python = ">=3.8"
@@ -32,7 +32,9 @@ dependencies = [
     "numpy",
     "mbuild",
     "mdtraj",
-    "paramed",   
+    "parmed",
+    "black",
+    "ruff"
 ]
 [project.optional-dependencies]
 test = [
@@ -40,7 +42,6 @@ test = [
     "pytest-xdist>=2.5",
     "pytest-cov>=3.0",
     "pytest-runner",
-    "pytest-cookies==0.4.0",
     "codecov"
 ]
 doc = [
@@ -57,8 +58,8 @@ doc = [
 #"GitHub Source" = "https://github.com/usnistgov/mbuild_polybuild/"
 #"Public Documentation" = "https://readthedocstodeath.nist.gov/mbuild_polybuild/"
 
-[project.entry-points."mbuild.plugins"]
-polybuild = "mbuild_polybuild.mbuild_polybuild:polybuild"
+#[project.entry-points."mbuild.plugins"]
+#polybuild = "mbuild_polybuild.mbuild_polybuild:polybuild"
 
 [tool.setuptools]
 zip-safe = false
@@ -101,7 +102,35 @@ testpaths = [
 ]
 
 [tool.black]
-line-length = 80
+line-length = 120
+indent-width = 4
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+exclude = [
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "build",
+    "dist",
+    "site-packages",
+    "venv",
+]
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "auto"
 
 [tool.coverage.run]
 omit = [
@@ -114,14 +143,7 @@ exclude_also = [
     "if TYPE_CHECKING:",
 ]
 
-[tool.isort]
-multi_line_output = 3
-include_trailing_comma = true
-force_grid_wrap = 0
-use_parentheses = true
-line_length = 80
-
 [tool.yapf]
-COLUMN_LIMIT = 80
+COLUMN_LIMIT = 120
 INDENT_WIDTH = 4
 USE_TABS = false

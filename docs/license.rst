@@ -1,9 +1,5 @@
-License(s)
+License
 ----------
 
-.. include:: ../LICENSES/LICENSE.md
-   :parser: myst_parser.sphinx_
-
-
-.. include:: ../LICENSES/Acknowledgements.md
+.. include:: LICENSE.md
    :parser: myst_parser.sphinx_

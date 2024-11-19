@@ -1,11 +1,9 @@
 mBuild Polymer Builder Documentation
 ===============================================
 
-.. include:: readme.rst
-   
 .. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+   :maxdepth: 2
+   :caption: Quick Links:
 
    readme
    API Reference <_autosummary/mbuild_polybuild>
@@ -13,6 +11,8 @@ mBuild Polymer Builder Documentation
    authors
    license
    changelog
+
+.. include:: readme.rst
 
 Indices and Tables
 ==================
