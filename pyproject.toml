@@ -1,0 +1,127 @@
+[build-system]
+requires = ["setuptools>=61.0", "versioningit~=2.0"] # Maybe "cython"
+build-backend = "setuptools.build_meta"
+
+# Self-descriptive entries which should always be present
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/
+[project]
+name = "mbuild_polybuild"
+description = "This mbuild recipe allows for the generation of complex monomers with controlled tacticity."
+keywords = [
+    "molecular simulations",
+    "polymer",
+]
+dynamic = ["version"]
+readme = "README.md"
+
+authors = [
+    { name = "Jennifer A Clark", email = "jennifer.clark@nist.gov" },
+]
+maintainers = [
+    {name = "Debra J. Audus", email = "debra.audus@nist.gov"},
+]
+# See https://pypi.org/classifiers/
+classifiers = ["License :: Other/Proprietary License", 
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.8"
+# Declare any run-time dependencies that should be installed with the package.
+dependencies = [
+    "importlib-resources;python_version<'3.10'",
+    "pre-commit",
+    "numpy",
+    "mbuild",
+    "mdtraj",
+    "paramed",   
+]
+[project.optional-dependencies]
+test = [
+    "pytest>=6.1.2",
+    "pytest-xdist>=2.5",
+    "pytest-cov>=3.0",
+    "pytest-runner",
+    "pytest-cookies==0.4.0",
+    "codecov"
+]
+doc = [
+    "sphinx",
+    "sphinx_rtd_theme",
+    "myst_parser",
+    "sphinx_copybutton",
+
+]
+
+
+# Update the urls once the hosting is set up.
+[project.urls]
+#"GitHub Source" = "https://github.com/usnistgov/mbuild_polybuild/"
+#"Public Documentation" = "https://readthedocstodeath.nist.gov/mbuild_polybuild/"
+
+[project.entry-points."mbuild.plugins"]
+polybuild = "mbuild_polybuild.mbuild_polybuild:polybuild"
+
+[tool.setuptools]
+zip-safe = false
+
+include-package-data = false
+license-files = ["LICENSE.md"]
+
+[tool.setuptools.packages.find]
+namespaces = false
+where = ["."]
+
+# Ref https://setuptools.pypa.io/en/latest/userguide/datafiles.html#package-data
+[tool.setuptools.package-data]
+mbuild_polybuild = [
+    "py.typed"
+]
+
+[tool.versioningit]
+default-version = "1+unknown"
+
+[tool.versioningit.format]
+distance = "{base_version}+{distance}.{vcs}{rev}"
+dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
+distance-dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
+
+[tool.versioningit.vcs]
+# The method key:
+method = "git"  # <- The method name
+# Parameters to pass to the method:
+match = ["*"]
+default-tag = "1.0.0"
+
+[tool.versioningit.write]
+file = "mbuild_polybuild/_version.py"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "mbuild_polybuild/tests",
+]
+
+[tool.black]
+line-length = 80
+
+[tool.coverage.run]
+omit = [
+    # Omit the tests
+    "*/tests/*",
+]
+
+[tool.coverage.report]
+exclude_also = [
+    "if TYPE_CHECKING:",
+]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 80
+
+[tool.yapf]
+COLUMN_LIMIT = 80
+INDENT_WIDTH = 4
+USE_TABS = false
