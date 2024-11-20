@@ -48,6 +48,12 @@ Initialize pre-commit for automatic formatting.
 pre-commit install
 ```
 
+## License
+
+The license in this repository is superseded by the most updated language
+on of the Public Access to NIST Research [*Copyright, Fair Use, and Licensing
+Statement for SRD, Data, and Software*][nist-open].
+
 ## Copyright
 
 Works of NIST employees are not not subject to copyright protection in the United States
@@ -55,3 +61,4 @@ Works of NIST employees are not not subject to copyright protection in the Unite
 <!-- References -->
 
 [nist-disclaimer]: https://www.nist.gov/open/license
+[nist-open]: https://www.nist.gov/open/license#software
