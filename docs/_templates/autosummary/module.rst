@@ -67,7 +67,9 @@
    :template: module.rst
    :recursive:
 {% for item in modules %}
+{% if not item.endswith('tests') and not item.endswith('_pdb_files') %}
    {{ item }}
+{% endif %}
 {%- endfor %}
 {% endif %}
 {% endblock %}
