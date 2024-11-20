@@ -103,6 +103,7 @@ html_theme_options = {
     "relbarbgcolor": "#1D285A",
     "bodyfont": "Calibri, sans-serif",
     "headfont": "Calibri, sans-serif",
+    "max-width": "fill-available",
 }
 
 

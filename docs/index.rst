@@ -6,7 +6,7 @@ mBuild Polymer Builder Documentation
    :caption: Quick Links:
 
    readme
-   API Reference <_autosummary/mbuild_polybuild>
+   api
    contributing
    authors
    license

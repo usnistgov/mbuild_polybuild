@@ -31,6 +31,7 @@ dependencies = [
     "pre-commit",
     "numpy",
     "mbuild",
+    "foyer",
     "mdtraj",
     "parmed",
     "black",
@@ -55,11 +56,8 @@ doc = [
 
 # Update the urls once the hosting is set up.
 [project.urls]
-#"GitHub Source" = "https://github.com/usnistgov/mbuild_polybuild/"
-#"Public Documentation" = "https://readthedocstodeath.nist.gov/mbuild_polybuild/"
-
-#[project.entry-points."mbuild.plugins"]
-#polybuild = "mbuild_polybuild.mbuild_polybuild:polybuild"
+"GitHub Source" = "https://github.com/usnistgov/mbuild_polybuild/"
+"DOI" = "https://data.nist.gov/od/id/mds2-3640"
 
 [tool.setuptools]
 zip-safe = false
