@@ -13,6 +13,12 @@ dependencies:
   - black
   - nbsphinx
   - pandoc
+  - mbuild
+  - foyer
+  - mdtraj
+  - parmed
+  - ruff
+  
   # Add depedencies at this level, if they aren't available on conda or conda-forge, add to pip section:
   - pip:
     - myst_parser
