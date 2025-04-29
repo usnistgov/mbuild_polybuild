@@ -70,10 +70,14 @@ jobs:
           flags: unittests
           name: codecov-{{ '${{ matrix.os }}' }}-py{{ '${{ matrix.python-version }}' }}
 
-      - name: docs
-        uses: usnistgov/Docs4NIST@0.6
+  docs:
+    name: Build docs on ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: usnistgov/Docs4NIST@add_analytics
         with:
           docs-folder: docs/
+          conda-environment: docs/requirements.yaml
           formats: |-
             epub
-            pdf
+            html
