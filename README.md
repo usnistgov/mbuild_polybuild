@@ -25,7 +25,7 @@ Below we provide instructions for `pip`.
 
 #### Download
 
-``git clone https://github.com/usnistgov/generate_alchemical_lammps_inputs``
+``git clone https://github.com/usnistgov/mbuild_polybuild``
 
 ### User with pip
 
@@ -77,7 +77,7 @@ Affilation:
 
 ## Citation
 
-Clark, J. A.; Audus, D. J.; Douglas, J. F. XXX, 2024. https://doi.org/10.18434/mds2-XXXX.
+Clark, J. A.; Audus, D. J.; Douglas, J. F. XXX, 2024. https://doi.org/10.18434/mds2-3640.
 
 ## Copyright
 
