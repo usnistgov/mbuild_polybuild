@@ -15,7 +15,7 @@ on:
     # Monthly tests run on main by default:
     #   Scheduled workflows run on the latest commit on the default or base branch.
     #   (from https://help.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events-schedule)
-    - cron: "0 0 1 * *"
+    - cron: "0 0 * * 0"
 
 concurrency:
   # Specific group naming so CI is only cancelled
@@ -82,14 +82,14 @@ jobs:
           flags: unittests
           name: codecov-${{ matrix.os }}-py${{ matrix.python-version }}
 
-#  docs:
-#    name: Build docs on ubuntu-latest
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: usnistgov/Docs4NIST@add_analytics
-#        with:
-#          docs-folder: docs/
-#          conda-environment: docs/requirements.yaml
-#          formats: |-
-#            epub
-#            html
+  docs:
+    name: Build docs on ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: usnistgov/Docs4NIST@add_analytics
+        with:
+          docs-folder: docs/
+          conda-environment: docs/requirements.yaml
+          formats: |-
+            epub
+            html
