@@ -58,6 +58,7 @@ doc = [
 [project.urls]
 "GitHub Source" = "https://github.com/usnistgov/mbuild_polybuild/"
 "DOI" = "https://data.nist.gov/od/id/mds2-3640"
+"Public Documentation" = "https://Docs4NIST.nist.gov/mbuild_polybuild/"
 
 [tool.setuptools]
 zip-safe = false

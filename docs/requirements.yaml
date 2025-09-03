@@ -1,0 +1,24 @@
+name: mbuild_polybuilddocs
+channels:
+  - conda-forge
+
+dependencies:
+  - python
+  - pip
+  - numpy
+  - sphinx>2.1
+  - docutils>=0.17
+  - pre-commit
+  - black
+  - nbsphinx
+  - pandoc
+  - mbuild
+  - foyer
+  - mdtraj
+  - parmed
+  - ruff
+  # Add depedencies at this level, if they aren't available on conda or conda-forge, add to pip section:
+  - pip:
+    - myst_parser
+    - sphinx_copybutton
+    - -e ..

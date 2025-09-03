@@ -77,7 +77,7 @@ Affilation:
 
 ## Citation
 
-Clark, J. A.; Audus, D. J.; Douglas, J. F. XXX, 2024. https://doi.org/10.18434/mds2-3640.
+Jennifer A. Clark, Debra J. Audus, Jack F. Douglas (2024), Polymer Builder Extension for MosDef-mBuild: mbuild_polybuild, National Institute of Standards and Technology, https://doi.org/10.18434/mds2-3640
 
 ## Copyright
 
