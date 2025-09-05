@@ -1,4 +1,14 @@
-"""Contains helper functions for forming molecules"""
+"""Toolbox Module
+
+This module contains helper functions for forming molecules, generating sequences, and applying forcefield parameters.
+
+Functions
+---------
+- _import_pdb: Retrieve the file path of a PDB file distributed with mbuild-polybuild.
+- atom2port: Replace specific atom types with ports in a given trajectory.
+- random_sequence: Generate a random copolymer sequence.
+- apply_nbfix: Apply non-bonded interaction fixes to a structure using parameters from a file.
+"""
 
 import os
 import json
@@ -12,16 +22,24 @@ import mbuild_polybuild
 
 
 def _import_pdb(filename):
-    """Export file object from pdb files distributed with mbuild-polybuild.
+    """
+    Retrieve the file path of a PDB file distributed with mbuild-polybuild.
 
     Parameters
     ----------
     filename : str
-        Filename of desired molecular structure.
+        Filename of the desired molecular structure.
 
     Returns
     -------
-    File path
+    str
+        Full file path to the PDB file.
+
+    Examples
+    --------
+    >>> path = _import_pdb("amide.pdb")
+    >>> print(path)
+    "/path/to/_pdb_files/amide.pdb"
     """
 
     return os.path.join(mbuild_polybuild.__file__[:-12], "_pdb_files", filename)
@@ -29,18 +47,20 @@ def _import_pdb(filename):
 
 def atom2port(Obj, atom_type="NO"):
     """
-    This function serves to easily create ports in the desired trajectory, by replacing
-    a certain atom type with a port in the direction it was pointing.
+    Replace specific atom types with ports in the given trajectory.
 
     Parameters
     ----------
-    Obj : obj
-        This is the instance for which to create ports.
-    atom_type : str, Optional, default="NO"
-        This atom type will be removed from the Compound and a port along the trajectory
-        of the bond will remain. The default value is the obscure atom, Nobelium. This
-        comparison is not case sensitive.
+    Obj : mb.Compound
+        The compound instance for which to create ports.
+    atom_type : str, optional, default="NO"
+        Atom type to be replaced with a port. Comparison is case-insensitive.
 
+    Examples
+    --------
+    >>> from mbuild import Compound
+    >>> compound = Compound()
+    >>> atom2port(compound, atom_type="H")
     """
 
     atom_type = atom_type.lower()
@@ -96,13 +116,25 @@ def atom2port(Obj, atom_type="NO"):
 
 def random_sequence(Ncopolymers, Nmonomers):
     """
-    Generate copolymer sequence
+    Generate a random copolymer sequence.
 
     Parameters
     ----------
     Ncopolymers : int
-        Number of copolymers
-    Nmonomers : number of monomers in the chain
+        Number of distinct copolymers.
+    Nmonomers : int
+        Number of monomers in the chain.
+
+    Returns
+    -------
+    str
+        A string representing the random copolymer sequence.
+
+    Examples
+    --------
+    >>> sequence = random_sequence(3, 10)
+    >>> print(sequence)
+    "ABACABCBAC"
     """
 
     copolymer_options = "ABCDEFGHIJK"
@@ -118,23 +150,29 @@ def random_sequence(Ncopolymers, Nmonomers):
 
 def apply_nbfix(structure, filename, filetype="json", units="real"):
     """
-    Recursively use the 'apply_nbfix' function to a structure instance using parameters from a .json file.
+    Apply non-bonded interaction fixes to a structure using parameters from a file.
 
     Parameters
     ----------
-    structure : obj
-        Structure object with a forcefield already applied
+    structure : mb.Compound
+        The structure object with a forcefield already applied.
     filename : str
-        Name of the file containing parameters of type "filetype"
-    filetype : str, Optional, default="json"
-        File type to import
-    units : str, Optional, default="real"
-        Flag to signal unit conversions. Although foyers normal parameter files expect energy units of kcal/mol and distance units of angstroms, the foyer function ``apply_nbfix`` expects kJ/mol and nm respectively. Thus, the flag "real" will convert between the two. If ``units=None`` then no units conversion is applied.
+        Name of the file containing parameters.
+    filetype : str, optional, default="json"
+        File type to import (e.g., "json").
+    units : str, optional, default="real"
+        Unit system for parameters. "real" converts between kcal/mol and angstroms.
 
     Returns
     -------
-    structure : obj
-        Same input structure with updated parameters.
+    mb.Compound
+        The input structure with updated parameters.
+
+    Examples
+    --------
+    >>> from mbuild import Compound
+    >>> structure = Compound()
+    >>> updated_structure = apply_nbfix(structure, "params.json")
     """
 
     if units is None or units == "lj":
