@@ -1,4 +1,14 @@
-"""Ammonium moiety."""
+"""Ammonium moiety.
+
+This module defines the `Ammonium` class, representing an ammonium functional group
+for molecular simulations. The ammonium group includes ports for attaching substituents.
+
+Examples
+--------
+>>> from mbuild_polybuild.aa_functional_groups.ammonium import Ammonium
+>>> ammonium = Ammonium(substituents=2, alkane=[3, 4])
+>>> ammonium.save("ammonium.mol2", overwrite=True)
+"""
 
 import mbuild as mb
 from mbuild.port import Port
@@ -8,26 +18,62 @@ import mbuild_polybuild.toolbox as tb
 
 class Ammonium(mb.Compound):
     """
-    An ammonium group -C(=O)O-.
+    An ammonium group.
 
-    The following ports are available for ammonium: 'port[0]' 'port[1]'
+    This class initializes an ammonium functional group by loading its structure
+    from a PDB file and setting up its ports for molecular assembly. It also
+    supports adding substituent groups to the ammonium center.
+
+    Ports
+    -----
+    - `port[0]`, `port[1]`, ... : Ports available for attaching substituents.
 
     Parameters
     ----------
-    substituents : int, Optional, default=0
-        The number of substituent groups to add to the ammonium center
-    alkane : int/list, Optional, default=None
-        If `int`, this is the length of the carbon chain of the assigned number of substituent groups
-        If a list, the length must be equal to the `substituent` parameter, defining the carbon chain length of each group
-    custom : list, Optional, default=None
-        This list contains compounds to be added as substituents. It may be of length 1 or equal to the `substituent` parameter.
-    ports : list[str], Optional, default=None
-        This list of strings contains the name of the port to attach to the ammonium group for each `Compound` in `custom`.
-        It must be the same length as `custom`. If the name of a port is unknown or there is only one option, that list entry
-        may be None. However, if the substiuent has multiple ports, the `str` must be defined.
+    substituents : int, optional, default=0
+        The number of substituent groups to add to the ammonium center.
+    alkane : int or list, optional, default=None
+        If `int`, specifies the carbon chain length for all substituents.
+        If `list`, specifies the carbon chain length for each substituent.
+    custom : list, optional, default=None
+        A list of compounds to add as substituents. Length must be 1 or equal
+        to `substituents`.
+    ports : list of str, optional, default=None
+        A list of port names to attach each compound in `custom` to the ammonium
+        group. Must be the same length as `custom`.
+
+    Examples
+    --------
+    >>> from mbuild_polybuild.aa_functional_groups.ammonium import Ammonium
+    >>> ammonium = Ammonium(substituents=2, alkane=[3, 4])
     """
 
     def __init__(self, substituents=0, alkane=None, custom=None, ports=None):
+        """
+        Initialize the ammonium functional group.
+
+        This method loads the ammonium structure from the `ammonium.pdb` file,
+        centers it at the origin, and sets up its ports. It also supports adding
+        substituent groups to the ammonium center.
+
+        Ports
+        -----
+        - `port[0]`, `port[1]`, ... : Ports available for attaching substituents.
+
+        Parameters
+        ----------
+        substituents : int, optional, default=0
+            The number of substituent groups to add to the ammonium center.
+        alkane : int or list, optional, default=None
+            If `int`, specifies the carbon chain length for all substituents.
+            If `list`, specifies the carbon chain length for each substituent.
+        custom : list, optional, default=None
+            A list of compounds to add as substituents. Length must be 1 or equal
+            to `substituents`.
+        ports : list of str, optional, default=None
+            A list of port names to attach each compound in `custom` to the ammonium
+            group. Must be the same length as `custom`.
+        """
         super(Ammonium, self).__init__()
 
         # Create ammonium center

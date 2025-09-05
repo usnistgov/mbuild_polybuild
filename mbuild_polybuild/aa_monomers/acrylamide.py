@@ -10,28 +10,35 @@ from mbuild_polybuild.aa_fragments.c_quaternary import C as C_qu
 class Acrylamide(mb.Compound):
     """
     An acrylamide monomer.
-    This function used our custom amide Compound.
 
-    The following port names lead to the following atoms:
-        'port[3]' : ternary carbon backbone
-        'down' : secondary carbon backbone
-        'port[1]' : amide group
+    This class uses a custom amide Compound.
+
+    Ports
+    -----
+    - port[3]: Ternary carbon backbone.
+    - down: Secondary carbon backbone.
+    - port[1]: Amide group.
 
     Parameters
     ----------
-    functional_group : mb.Compound
-        Add a custom functional group to connect to the amide, completing a monomer
-    port_name : str
+    functional_group : mb.Compound, optional
+        Add a custom functional group to connect to the amide, completing a monomer.
+    port_name : str, optional
         If more than one port is found on the functional_group, define the target port label here.
-    cap_branch : bool, Optional, default=True
-        Choose whether to cap the amide group with a hydrogen
-    cap_ternary : bool, Optional, default=False
-        Choose whether to cap what would be a ternary carbon as a secondary group
-    cap_primary : bool, Optional, default=False
-        Choose whether to cap what would be a secondary carbon as a primary carbon
-    chiral_switch : bool, Optional, default=False
-        When this is true, the hydrogen group and amide group switch places
+    cap_branch : bool, optional, default=True
+        Choose whether to cap the amide group with a hydrogen.
+    cap_ternary : bool, optional, default=False
+        Choose whether to cap what would be a ternary carbon as a secondary group.
+    cap_primary : bool, optional, default=False
+        Choose whether to cap what would be a secondary carbon as a primary carbon.
+    chiral_switch : bool, optional, default=False
+        When this is true, the hydrogen group and amide group switch places.
 
+    Examples
+    --------
+    >>> from mbuild_polybuild.aa_monomers.acrylamide import Acrylamide
+    >>> acrylamide = Acrylamide()
+    >>> acrylamide.visualize()
     """
 
     def __init__(

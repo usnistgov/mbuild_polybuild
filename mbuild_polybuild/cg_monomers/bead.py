@@ -1,4 +1,4 @@
-"""Quaternary moiety."""
+"""Bead Module"""
 
 import numpy as np
 
@@ -9,20 +9,29 @@ class Bead(mb.Compound):
     """
     General bead for coarse-graining with a variable number of ports placed for a coarse-grained scheme.
 
-    Ports:
-        "up" : First port, always present
-        "down" : Second port, 180˚ from "up"
-        "branch_up" : Third port are placed in a "T"
-        "branch_down" : Fourth port placed in a cross
+    Ports
+    -----
+    - up: First port, always present.
+    - down: Second port, 180° from "up".
+    - branch_up: Third port, placed in a "T".
+    - branch_down: Fourth port, placed in a cross.
 
     Parameters
     ----------
     name : str
-        Name of this bead type
-    Nports : int, Optional, default=2
+        Name of this bead type.
+    Nports : int, optional, default=2
         Number of ports for this bead type placed for a coarse-grained scheme.
-    compound_kwargs : dict, Optional, default={}
-        Additional keyword arguements for the mb.Compound class (e.g. mass)
+    bond_length : float, optional, default=1.0
+        Length of the bond between ports.
+    compound_kwargs : dict, optional, default={{}}
+        Additional keyword arguments for the mb.Compound class (e.g., mass).
+
+    Examples
+    --------
+    >>> from mbuild_polybuild.cg_monomers.bead import Bead
+    >>> bead = Bead(name="_B", Nports=3)
+    >>> bead.visualize()
     """
 
     def __init__(self, name, Nports=2, bond_length=1.0):

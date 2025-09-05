@@ -1,6 +1,4 @@
-name: mbuild_polybuild
 channels:
-
   - conda-forge
 
 dependencies:
@@ -23,3 +21,4 @@ dependencies:
   - pip:
     - myst_parser
     - sphinx_copybutton
+    - -e .

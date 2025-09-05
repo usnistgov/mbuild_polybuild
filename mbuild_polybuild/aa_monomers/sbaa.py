@@ -10,18 +10,26 @@ from mbuild_polybuild.aa_functional_groups.sulfonate import Sulfonate
 class Sbaa(mb.Compound):
     """
     A sulfobetaine acrylamide monomer.
-    This function used our custom ester Compound.
 
-    The following port names lead to the following atoms:
-        'port[3]' : quaternary carbon backbone
-        'down' : secondary carbon backbone
+    This class uses a custom ester Compound.
+
+    Ports
+    -----
+    - port[3]: Quaternary carbon backbone.
+    - down: Secondary carbon backbone.
 
     Parameters
     ----------
-    spacer_backbone : int, Optional, default=2
-        This is the number of methylene groups between the backbone group and the first ion.
-    spacer_ion : int, Optional, default=2
-        This is the number of methylene groups between the backbone group and the second ion.
+    spacer_backbone : int, optional, default=2
+        Number of methylene groups between the backbone group and the first ion.
+    spacer_ion : int, optional, default=2
+        Number of methylene groups between the backbone group and the second ion.
+
+    Examples
+    --------
+    >>> from mbuild_polybuild.aa_monomers.sbaa import Sbaa
+    >>> sbaa = Sbaa(spacer_backbone=3, spacer_ion=2)
+    >>> sbaa.visualize()
     """
 
     def __init__(self, spacer_backbone=2, spacer_ion=2, switch_backbone_chiral=False):

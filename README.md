@@ -1,6 +1,16 @@
 mBuild Polymer Builder
 ==============================
 
+The mbuild_polybuild repository facilitates generating simulation boxes of polymers composed of complex monomer design. Key features include:
+
+- Controlled tacticity
+- Flexible monomer functionalization
+- Library of standard polymer backbone grounds
+- Coarse-graining support 
+- XML forcefields, such as OPLS-AA
+
+The modular design of mbuild_polybuild built on [mbuild](https://mbuild.mosdef.org/en/stable/) allows users to customize monomers with functional groups and spacer chains, facilitating advanced polymer analytics.
+
 ## [NIST Disclaimer][nist-disclaimer]
 
 Certain commercial equipment, instruments, or materials are identified in this paper to foster understanding. Such identification does not imply recommendation or endorsement by the National Institute of Standards and Technology, nor does it imply that the materials or equipment identified are necessarily the best available for the purpose.
@@ -11,7 +21,7 @@ This mbuild recipe allows for the generation of complex monomers with controlled
 
 mbuild_polybuild is bound by a [Code of Conduct](https://github.com/usnistgov/mbuild_polybuild/blob/main/CODE_OF_CONDUCT.md).
 
-### [Documentation][docs4nist]
+### [Check out the documentation][docs4nist]
 
 ## Dependencies
 
@@ -23,7 +33,7 @@ No python library dependenices are required before installation.
 To build mbuild_polybuild from source, we highly recommend using virtual environments.
 Below we provide instructions for `pip`.
 
-#### Download
+### Download
 
 ``git clone https://github.com/usnistgov/mbuild_polybuild``
 

@@ -1,4 +1,14 @@
-"""Phenyl moiety."""
+"""Phenyl moiety.
+
+This module defines the `Phenyl` class, representing a phenyl functional group
+for molecular simulations.
+
+Examples
+--------
+>>> from mbuild_polybuild.aa_functional_groups.phenyl import Phenyl
+>>> phenyl = Phenyl()
+>>> phenyl.save("phenyl.mol2", overwrite=True)
+"""
 
 import mbuild as mb
 
@@ -6,9 +16,25 @@ import mbuild_polybuild.toolbox as tb
 
 
 class Phenyl(mb.Compound):
-    """An phenyl"""
+    """
+    A phenyl group.
+
+    This class initializes a phenyl functional group by loading its structure
+    from a PDB file and setting up its ports for molecular assembly.
+
+    Examples
+    --------
+    >>> from mbuild_polybuild.aa_functional_groups.phenyl import Phenyl
+    >>> phenyl = Phenyl()
+    """
 
     def __init__(self):
+        """
+        Initialize the phenyl functional group.
+
+        This method loads the phenyl structure from the `phenyl.pdb` file,
+        centers it at the origin, and sets up its ports.
+        """
         super(Phenyl, self).__init__()
 
         mb.load(

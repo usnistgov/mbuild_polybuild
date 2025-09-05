@@ -1,4 +1,4 @@
-"""Ester moiety."""
+"""Betaine Monomer Module"""
 
 import mbuild as mb
 
@@ -7,24 +7,31 @@ from mbuild_polybuild.cg_monomers.bead import Bead
 
 class Betaine(mb.Compound):
     """
-    A generalized representation of a betaine monomer. "_B"*backbone_length()
+    A generalized representation of a betaine monomer.
 
-    Available ports as follows:
-        'up' : Connection with one side of monomer
-        'down' : Connection with another side of the monomer
+    Ports
+    -----
+    - up: Connection with one side of the monomer.
+    - down: Connection with another side of the monomer.
 
     Parameters
     ----------
-    backbone_length : int, Optional, default=1
-        Number of beads in backbone chain of a monomer. This chain is perpendicular to the pendent group close to the center.
-    spacer_backbone : int, Optional, default=2
-        Number of backbone groups between cation and backbone chain.
-    spacer_ion : int, Optional, default=1
-        Number of backbone groups between cation and terminal anion.
-    polar_backbone : bool, Optional, default=False
-        If true, a polar group "_P" is added to the base of the pendent where it meets the chain
-    cap_group : bool, Optional, default=False
-        Remove "down" port for monomer to create capping monomer.
+    backbone_length : int, optional, default=1
+        Number of beads in the backbone chain of a monomer. This chain is perpendicular to the pendent group close to the center.
+    spacer_backbone : int, optional, default=2
+        Number of backbone groups between the cation and backbone chain.
+    spacer_ion : int, optional, default=1
+        Number of backbone groups between the cation and terminal anion.
+    polar_backbone : bool, optional, default=False
+        If true, a polar group "_P" is added to the base of the pendent where it meets the chain.
+    cap_group : bool, optional, default=False
+        Remove the "down" port for the monomer to create a capping monomer.
+
+    Examples
+    --------
+    >>> from mbuild_polybuild.cg_monomers.betaine import Betaine
+    >>> betaine = Betaine(backbone_length=2, spacer_backbone=3)
+    >>> betaine.visualize()
     """
 
     def __init__(self, backbone_length=1, spacer_backbone=2, spacer_ion=1, polar_backbone=False, cap_group=False):

@@ -9,28 +9,36 @@ from mbuild_polybuild.aa_fragments.c_quaternary import C as C_qu
 
 class Methacrylate(mb.Compound):
     """
-    An methacrylate monomer.
-    This function used our custom ester Compound.
+    A methacrylate monomer.
 
-    The following port names lead to the following atoms:
-        'up' : quaternary carbon backbone
-        'down' : secondary carbon backbone
-        'port[1]' : ester group
+    This class uses a custom ester Compound.
+
+    Ports
+    -----
+    - up: Quaternary carbon backbone.
+    - down: Secondary carbon backbone.
+    - port[1]: Ester group.
 
     Parameters
     ----------
-    functional_group : mb.Compound
-        Add a custom functional group to connect to the ester, completing a monomer
-    port_name : str
+    functional_group : mb.Compound, optional
+        Add a custom functional group to connect to the ester, completing a monomer.
+    port_name : str, optional
         If more than one port is found on the functional_group, define the target port label here.
-    cap_branch : bool, Optional, default=True
-        Choose whether to cap the ester group with a hydrogen
-    cap_ternary : bool, Optional, default=False
-        Choose whether to cap what would be a quaternary carbon as a ternary group
-    cap_primary : bool, Optional, default=False
-        Choose whether to cap what would be a secondary carbon as a primary carbon
-    chiral_switch : bool, Optional, default=False
-        When this is true, the methyl group and ester group switch places
+    cap_branch : bool, optional, default=True
+        Choose whether to cap the ester group with a hydrogen.
+    cap_ternary : bool, optional, default=False
+        Choose whether to cap what would be a quaternary carbon as a ternary group.
+    cap_primary : bool, optional, default=False
+        Choose whether to cap what would be a secondary carbon as a primary carbon.
+    chiral_switch : bool, optional, default=False
+        When this is true, the methyl group and ester group switch places.
+
+    Examples
+    --------
+    >>> from mbuild_polybuild.aa_monomers.methacrylate import Methacrylate
+    >>> methacrylate = Methacrylate()
+    >>> methacrylate.visualize()
 
     """
 

@@ -1,4 +1,4 @@
-"""Methacrylate moiety."""
+"""Sulfobetaine Methacrylate moiety."""
 
 import mbuild as mb
 
@@ -10,18 +10,26 @@ from mbuild_polybuild.aa_functional_groups.sulfonate import Sulfonate
 class Sbma(mb.Compound):
     """
     A sulfobetaine methacrylate monomer.
-    This function used our custom ester Compound.
 
-    The following port names lead to the following atoms:
-        'up' : quaternary carbon backbone
-        'down' : secondary carbon backbone
+    This class uses a custom ester Compound.
+
+    Ports
+    -----
+    - up: Quaternary carbon backbone.
+    - down: Secondary carbon backbone.
 
     Parameters
     ----------
-    spacer_backbone : int, Optional, default=2
-        This is the number of methylene groups between the backbone group and the first ion.
-    spacer_ion : int, Optional, default=2
-        This is the number of methylene groups between the backbone group and the second ion.
+    spacer_backbone : int, optional, default=2
+        Number of methylene groups between the backbone group and the first ion.
+    spacer_ion : int, optional, default=2
+        Number of methylene groups between the backbone group and the second ion.
+
+    Examples
+    --------
+    >>> from mbuild_polybuild.aa_monomers.sbma import Sbma
+    >>> sbma = Sbma(spacer_backbone=3, spacer_ion=2)
+    >>> sbma.visualize()
     """
 
     def __init__(self, spacer_backbone=2, spacer_ion=2, switch_backbone_chiral=False):

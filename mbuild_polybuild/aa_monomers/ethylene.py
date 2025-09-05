@@ -10,25 +10,32 @@ class Ethylene(mb.Compound):
     """
     An ethylene backbone monomer.
 
-    The following port names lead to the following atoms:
-        'port[3]' : ternary carbon backbone
-        'down' : secondary carbon backbone
-        'port[1]' : amide group
+    Ports
+    -----
+    - port[3]: Ternary carbon backbone.
+    - down: Secondary carbon backbone.
+    - port[1]: Amide group.
 
     Parameters
     ----------
-    functional_group : mb.Compound
-        Add a custom functional group to connect to the open port on the backbone, completing a monomer
-    port_name : str
+    functional_group : mb.Compound, optional
+        Add a custom functional group to connect to the open port on the backbone, completing a monomer.
+    port_name : str, optional
         If more than one port is found on the functional_group, define the target port label here.
-    cap_branch : bool, Optional, default=True
-        Choose whether to cap the open side group port with a hydrogen
-    cap_ternary : bool, Optional, default=False
-        Choose whether to cap what would be a ternary carbon as a secondary group
-    cap_primary : bool, Optional, default=False
-        Choose whether to cap what would be a secondary carbon as a primary carbon
-    chiral_switch : bool, Optional, default=False
-        When this is true, the hydrogen group and amide group switch places
+    cap_branch : bool, optional, default=True
+        Choose whether to cap the open side group port with a hydrogen.
+    cap_ternary : bool, optional, default=False
+        Choose whether to cap what would be a ternary carbon as a secondary group.
+    cap_primary : bool, optional, default=False
+        Choose whether to cap what would be a secondary carbon as a primary carbon.
+    chiral_switch : bool, optional, default=False
+        When this is true, the hydrogen group and amide group switch places.
+
+    Examples
+    --------
+    >>> from mbuild_polybuild.aa_monomers.ethylene import Ethylene
+    >>> ethylene = Ethylene()
+    >>> ethylene.visualize()
 
     """
 
