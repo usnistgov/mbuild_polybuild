@@ -35,7 +35,7 @@ class Sbaa(mb.Compound):
     def __init__(self, spacer_backbone=2, spacer_ion=2, switch_backbone_chiral=False):
         super(Sbaa, self).__init__()
 
-        if isinstance(spacer_ion, int) or isinstance(spacer_backbone, int):
+        if not isinstance(spacer_ion, int) or not isinstance(spacer_backbone, int):
             raise ValueError("Spacer length must be an integer")
 
         # Create Moieties

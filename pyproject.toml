@@ -99,6 +99,13 @@ minversion = "6.0"
 testpaths = [
     "mbuild_polybuild/tests",
 ]
+filterwarnings = [
+    "ignore::DeprecationWarning:gmso.*",
+    "ignore::DeprecationWarning:pkg_resources.*",
+    "ignore::DeprecationWarning:parmed.*",
+    "ignore::DeprecationWarning",
+    "ignore::UserWarning:mdtraj.*",
+]
 
 [tool.black]
 line-length = 120
