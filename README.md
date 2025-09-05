@@ -97,7 +97,7 @@ Works of NIST employees are not not subject to copyright protection in the Unite
 
 [nist-disclaimer]: https://www.nist.gov/open/license
 [nist-open]: https://www.nist.gov/open/license#software
-[docs4nist]: https://www.nist.gov/docs4nist/
+[docs4nist]: https://pages.nist.gov/mbuild_polybuild/en/main/index.html
 [daudus]: https://www.nist.gov/people/debra-audus
 [jdouglas]: https://www.nist.gov/people/jack-f-douglas
 [polyanal]: https://www.nist.gov/programs-projects/polymer-analytics
