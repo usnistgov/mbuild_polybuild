@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_molecules.ion.MonatomicIon.add\_bond
+==========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_molecules.ion
+
+.. automethod:: MonatomicIon.add_bond

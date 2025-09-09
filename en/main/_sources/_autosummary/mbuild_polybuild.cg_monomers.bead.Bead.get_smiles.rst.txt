@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.bead.Bead.get\_smiles
+====================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.bead
+
+.. automethod:: Bead.get_smiles

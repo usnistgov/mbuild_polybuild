@@ -1,0 +1,38 @@
+mptb
+====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mptb
+
+mbuild_polybuild.aa_functional_groups.mptb
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.mptb
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      MPTB
+   
+   
+
+   
+   
+   
+
+
+

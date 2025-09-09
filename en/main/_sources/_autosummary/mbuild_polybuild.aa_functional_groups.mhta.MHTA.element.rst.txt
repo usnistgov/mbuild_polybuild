@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mhta.MHTA.element
+==========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mhta
+
+.. autoproperty:: MHTA.element

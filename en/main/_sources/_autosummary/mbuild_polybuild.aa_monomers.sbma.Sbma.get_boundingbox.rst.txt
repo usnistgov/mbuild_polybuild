@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.sbma.Sbma.get\_boundingbox
+=========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.sbma
+
+.. automethod:: Sbma.get_boundingbox

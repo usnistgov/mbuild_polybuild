@@ -1,0 +1,90 @@
+Ammonium
+========
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ammonium
+
+mbuild_polybuild.aa_functional_groups.ammonium.Ammonium
+
+.. autoclass:: Ammonium
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         Ammonium.box
+         Ammonium.center
+         Ammonium.charge
+         Ammonium.element
+         Ammonium.mass
+         Ammonium.maxs
+         Ammonium.mins
+         Ammonium.n_bonds
+         Ammonium.n_direct_bonds
+         Ammonium.n_particles
+         Ammonium.periodicity
+         Ammonium.pos
+         Ammonium.root
+         Ammonium.xyz
+         Ammonium.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         Ammonium.add
+         Ammonium.add_bond
+         Ammonium.all_ports
+         Ammonium.ancestors
+         Ammonium.available_ports
+         Ammonium.bonds
+         Ammonium.check_for_overlap
+         Ammonium.condense
+         Ammonium.direct_bonds
+         Ammonium.energy_minimize
+         Ammonium.flatten
+         Ammonium.freud_generate_bonds
+         Ammonium.from_gmso
+         Ammonium.from_parmed
+         Ammonium.from_pybel
+         Ammonium.from_trajectory
+         Ammonium.generate_bonds
+         Ammonium.get_boundingbox
+         Ammonium.get_smiles
+         Ammonium.is_independent
+         Ammonium.min_periodic_distance
+         Ammonium.particles
+         Ammonium.particles_by_element
+         Ammonium.particles_by_name
+         Ammonium.particles_in_range
+         Ammonium.print_hierarchy
+         Ammonium.referenced_ports
+         Ammonium.remove
+         Ammonium.remove_bond
+         Ammonium.reset_labels
+         Ammonium.rotate
+         Ammonium.rotate_dihedral
+         Ammonium.save
+         Ammonium.spin
+         Ammonium.successors
+         Ammonium.to_freud
+         Ammonium.to_gmso
+         Ammonium.to_hoomdsnapshot
+         Ammonium.to_intermol
+         Ammonium.to_networkx
+         Ammonium.to_parmed
+         Ammonium.to_pybel
+         Ammonium.to_rdkit
+         Ammonium.to_smiles
+         Ammonium.to_trajectory
+         Ammonium.translate
+         Ammonium.translate_to
+         Ammonium.update_coordinates
+         Ammonium.visualize
+   
+   

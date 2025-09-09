@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_molecules.ion.MonatomicIon.direct\_bonds
+==============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_molecules.ion
+
+.. automethod:: MonatomicIon.direct_bonds

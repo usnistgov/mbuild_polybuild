@@ -1,0 +1,38 @@
+tmstb
+=====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tmstb
+
+mbuild_polybuild.aa_functional_groups.tmstb
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.tmstb
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      TMSTB
+   
+   
+
+   
+   
+   
+
+
+

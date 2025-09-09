@@ -1,0 +1,90 @@
+TFTP
+====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+mbuild_polybuild.aa_functional_groups.tftp.TFTP
+
+.. autoclass:: TFTP
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         TFTP.box
+         TFTP.center
+         TFTP.charge
+         TFTP.element
+         TFTP.mass
+         TFTP.maxs
+         TFTP.mins
+         TFTP.n_bonds
+         TFTP.n_direct_bonds
+         TFTP.n_particles
+         TFTP.periodicity
+         TFTP.pos
+         TFTP.root
+         TFTP.xyz
+         TFTP.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         TFTP.add
+         TFTP.add_bond
+         TFTP.all_ports
+         TFTP.ancestors
+         TFTP.available_ports
+         TFTP.bonds
+         TFTP.check_for_overlap
+         TFTP.condense
+         TFTP.direct_bonds
+         TFTP.energy_minimize
+         TFTP.flatten
+         TFTP.freud_generate_bonds
+         TFTP.from_gmso
+         TFTP.from_parmed
+         TFTP.from_pybel
+         TFTP.from_trajectory
+         TFTP.generate_bonds
+         TFTP.get_boundingbox
+         TFTP.get_smiles
+         TFTP.is_independent
+         TFTP.min_periodic_distance
+         TFTP.particles
+         TFTP.particles_by_element
+         TFTP.particles_by_name
+         TFTP.particles_in_range
+         TFTP.print_hierarchy
+         TFTP.referenced_ports
+         TFTP.remove
+         TFTP.remove_bond
+         TFTP.reset_labels
+         TFTP.rotate
+         TFTP.rotate_dihedral
+         TFTP.save
+         TFTP.spin
+         TFTP.successors
+         TFTP.to_freud
+         TFTP.to_gmso
+         TFTP.to_hoomdsnapshot
+         TFTP.to_intermol
+         TFTP.to_networkx
+         TFTP.to_parmed
+         TFTP.to_pybel
+         TFTP.to_rdkit
+         TFTP.to_smiles
+         TFTP.to_trajectory
+         TFTP.translate
+         TFTP.translate_to
+         TFTP.update_coordinates
+         TFTP.visualize
+   
+   

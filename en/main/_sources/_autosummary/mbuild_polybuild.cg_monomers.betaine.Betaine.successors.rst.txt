@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.betaine.Betaine.successors
+=========================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.betaine
+
+.. automethod:: Betaine.successors

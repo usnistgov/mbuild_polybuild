@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mhta.MHTA.add\_bond
+============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mhta
+
+.. automethod:: MHTA.add_bond

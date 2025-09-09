@@ -1,0 +1,38 @@
+methacrylate
+============
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.methacrylate
+
+mbuild_polybuild.aa_monomers.methacrylate
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_monomers.methacrylate
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Methacrylate
+   
+   
+
+   
+   
+   
+
+
+

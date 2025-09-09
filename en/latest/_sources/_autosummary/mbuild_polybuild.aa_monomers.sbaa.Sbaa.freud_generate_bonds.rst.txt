@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.sbaa.Sbaa.freud\_generate\_bonds
+===============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.sbaa
+
+.. automethod:: Sbaa.freud_generate_bonds

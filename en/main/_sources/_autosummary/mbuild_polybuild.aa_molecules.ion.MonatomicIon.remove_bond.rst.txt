@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_molecules.ion.MonatomicIon.remove\_bond
+=============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_molecules.ion
+
+.. automethod:: MonatomicIon.remove_bond

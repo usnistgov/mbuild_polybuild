@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mea.MEA.from\_trajectory
+=================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mea
+
+.. automethod:: MEA.from_trajectory

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.sbma.Sbma.particles\_by\_name
+============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.sbma
+
+.. automethod:: Sbma.particles_by_name

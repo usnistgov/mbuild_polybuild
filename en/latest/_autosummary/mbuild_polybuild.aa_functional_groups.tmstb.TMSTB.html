@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>TMSTB &#8212; mBuild Polymer Builder 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/ntd2d.css?v=c867aedc" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    
+    <script src="../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box.html" />
+    <link rel="prev" title="tmstb" href="mbuild_polybuild.aa_functional_groups.tmstb.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJSMY46M5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RJSMY46M5C');
+  </script>
+  <!-- Old DAP UA tag -->
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c">
+  </script>
+
+   
+
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box.html" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_functional_groups.tmstb.html" title="tmstb"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mbuild_polybuild.aa_functional_groups.html" >aa_functional_groups</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="mbuild_polybuild.aa_functional_groups.tmstb.html" accesskey="U">tmstb</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">TMSTB</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="tmstb">
+<h1>TMSTB<a class="headerlink" href="#tmstb" title="Link to this heading">¶</a></h1>
+<p>mbuild_polybuild.aa_functional_groups.tmstb.TMSTB</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mbuild_polybuild.aa_functional_groups.tmstb.</span></span><span class="sig-name descname"><span class="pre">TMSTB</span></span><a class="reference internal" href="../_modules/mbuild_polybuild/aa_functional_groups/tmstb.html#TMSTB"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Compound</span></code></p>
+<p>A trimethylsilylpropylthiobutanol (TMSTB) group.</p>
+<p>This class initializes a trimethylsilylpropylthiobutanol functional group by loading its structure
+from a PDB file and setting up its ports for molecular assembly.</p>
+<section id="ports">
+<h2>Ports<a class="headerlink" href="#ports" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><cite>port[0]</cite>: Connection to the trimethylsilyl group.</p></li>
+<li><p><cite>port[1]</cite>: Connection to the propyl group.</p></li>
+<li><p><cite>port[2]</cite>: Connection to the butanol group.</p></li>
+</ul>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mbuild_polybuild.aa_functional_groups.tmstb</span> <span class="kn">import</span> <span class="n">TMSTB</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">tmstb</span> <span class="o">=</span> <span class="n">TMSTB</span><span class="p">()</span>
+</pre></div>
+</div>
+<blockquote>
+<div><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.box</span></code></a></p></td>
+<td><p>Get the box of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.center.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.center" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.center</span></code></a></p></td>
+<td><p>Get the cartesian center of the Compound based on its Particles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.charge.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.charge" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.charge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.charge</span></code></a></p></td>
+<td><p>Return the total charge of a compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.element.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.element" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.element</span></code></a></p></td>
+<td><p>Get the element of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.mass.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.mass" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.mass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.mass</span></code></a></p></td>
+<td><p>Return the total mass of a compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.maxs.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.maxs" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.maxs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.maxs</span></code></a></p></td>
+<td><p>Return the maximum x, y, z coordinate of any particle in this compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.mins.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.mins" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.mins"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.mins</span></code></a></p></td>
+<td><p>Return the mimimum x, y, z coordinate of any particle in this compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_bonds.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_bonds" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.n_bonds</span></code></a></p></td>
+<td><p>Return the total number of bonds in the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_direct_bonds.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_direct_bonds" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_direct_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.n_direct_bonds</span></code></a></p></td>
+<td><p>Return the number of bonds a particle is directly involved in.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_particles.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_particles" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.n_particles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.n_particles</span></code></a></p></td>
+<td><p>Return the number of Particles in the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.periodicity.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.periodicity" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.periodicity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.periodicity</span></code></a></p></td>
+<td><p>Get the periodicity of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.pos.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.pos" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.pos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.pos</span></code></a></p></td>
+<td><p>Get the position of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.root.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.root" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.root"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.root</span></code></a></p></td>
+<td><p>Get the Compound at the top of self's hierarchy.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.xyz.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.xyz" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.xyz</span></code></a></p></td>
+<td><p>Return all particle coordinates in this compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.xyz_with_ports.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.xyz_with_ports" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.xyz_with_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.xyz_with_ports</span></code></a></p></td>
+<td><p>Return all particle coordinates in this compound including ports.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.add.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.add" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.add</span></code></a>(new_child[, label, containment, ...])</p></td>
+<td><p>Add a part to the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.add_bond.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.add_bond" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.add_bond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.add_bond</span></code></a>(particle_pair[, bond_order])</p></td>
+<td><p>Add a bond between two Particles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.all_ports.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.all_ports" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.all_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.all_ports</span></code></a>()</p></td>
+<td><p>Return all Ports referenced by this Compound and its successors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.ancestors.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.ancestors" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.ancestors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.ancestors</span></code></a>()</p></td>
+<td><p>Generate all ancestors of the Compound recursively.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.available_ports.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.available_ports" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.available_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.available_ports</span></code></a>()</p></td>
+<td><p>Return all unoccupied Ports referenced by this Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.bonds.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.bonds" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.bonds</span></code></a>([return_bond_order])</p></td>
+<td><p>Return all bonds in the Compound and sub-Compounds.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.check_for_overlap.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.check_for_overlap" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.check_for_overlap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.check_for_overlap</span></code></a>(excluded_bond_depth)</p></td>
+<td><p>Check if a compound contains overlapping particles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.condense.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.condense" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.condense"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.condense</span></code></a>([inplace])</p></td>
+<td><p>Condense the hierarchical structure of the Compound to the level of molecules.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.direct_bonds.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.direct_bonds" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.direct_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.direct_bonds</span></code></a>([graph_depth])</p></td>
+<td><p>Return a list of particles that this particle bonds to.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.energy_minimize.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.energy_minimize" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.energy_minimize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.energy_minimize</span></code></a>([forcefield, steps, ...])</p></td>
+<td><p>Perform an energy minimization on a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.flatten.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.flatten" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.flatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.flatten</span></code></a>([inplace])</p></td>
+<td><p>Flatten the hierarchical structure of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.freud_generate_bonds.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.freud_generate_bonds" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.freud_generate_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.freud_generate_bonds</span></code></a>(name_a, name_b, ...)</p></td>
+<td><p>Add Bonds between all pairs of types a/b within [dmin, dmax].</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_gmso.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_gmso" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_gmso"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.from_gmso</span></code></a>(topology[, coords_only, ...])</p></td>
+<td><p>Convert a GMSO Topology to mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_parmed.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_parmed" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_parmed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.from_parmed</span></code></a>(structure[, coords_only, ...])</p></td>
+<td><p>Extract atoms and bonds from a pmd.Structure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_pybel.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_pybel" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_pybel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.from_pybel</span></code></a>(pybel_mol[, use_element, ...])</p></td>
+<td><p>Create a Compound from a Pybel.Molecule.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_trajectory.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_trajectory" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.from_trajectory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.from_trajectory</span></code></a>(traj[, frame, ...])</p></td>
+<td><p>Extract atoms and bonds from a md.Trajectory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.generate_bonds.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.generate_bonds" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.generate_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.generate_bonds</span></code></a>(name_a, name_b, dmin, dmax)</p></td>
+<td><p>Add Bonds between all pairs of types a/b within [dmin, dmax].</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.get_boundingbox.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.get_boundingbox" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.get_boundingbox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.get_boundingbox</span></code></a>([pad_box])</p></td>
+<td><p>Compute the bounding box of the compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.get_smiles.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.get_smiles" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.get_smiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.get_smiles</span></code></a>()</p></td>
+<td><p>Get SMILES string for compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.is_independent.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.is_independent" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.is_independent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.is_independent</span></code></a>()</p></td>
+<td><p>Return True if there is no bond between particles of the Compound to an external Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.min_periodic_distance.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.min_periodic_distance" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.min_periodic_distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.min_periodic_distance</span></code></a>(xyz0, xyz1)</p></td>
+<td><p>Vectorized distance calculation considering minimum image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.particles</span></code></a>([include_ports])</p></td>
+<td><p>Return all Particles of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_by_element.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_by_element" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_by_element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.particles_by_element</span></code></a>(element)</p></td>
+<td><p>Return all Particles of the Compound with a specific element.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_by_name.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_by_name" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_by_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.particles_by_name</span></code></a>(name)</p></td>
+<td><p>Return all Particles of the Compound with a specific name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_in_range.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_in_range" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.particles_in_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.particles_in_range</span></code></a>(compound, dmax[, ...])</p></td>
+<td><p>Find particles within a specified range of another particle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.print_hierarchy.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.print_hierarchy" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.print_hierarchy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.print_hierarchy</span></code></a>([print_full, index, ...])</p></td>
+<td><p>Print the hierarchy of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.referenced_ports.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.referenced_ports" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.referenced_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.referenced_ports</span></code></a>()</p></td>
+<td><p>Return all Ports referenced by this Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.remove.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.remove" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.remove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.remove</span></code></a>(objs_to_remove[, reset_labels])</p></td>
+<td><p>Remove children from the Compound cleanly.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.remove_bond.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.remove_bond" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.remove_bond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.remove_bond</span></code></a>(particle_pair)</p></td>
+<td><p>Delete a bond between a pair of Particles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.reset_labels.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.reset_labels" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.reset_labels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.reset_labels</span></code></a>()</p></td>
+<td><p>Reset Compound labels so that substituents and ports are renumbered, indexed from port[0] to port[N], where N-1 is the number of ports.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.rotate.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.rotate" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.rotate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.rotate</span></code></a>(theta, around)</p></td>
+<td><p>Rotate Compound around an arbitrary vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.rotate_dihedral.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.rotate_dihedral" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.rotate_dihedral"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.rotate_dihedral</span></code></a>(bond, phi)</p></td>
+<td><p>Rotate a dihedral about a central bond.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.save.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.save" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.save</span></code></a>(filename[, include_ports, box, ...])</p></td>
+<td><p>Save the Compound to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.spin.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.spin" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.spin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.spin</span></code></a>(theta, around[, anchor])</p></td>
+<td><p>Rotate Compound in place around an arbitrary vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.successors.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.successors" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.successors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.successors</span></code></a>()</p></td>
+<td><p>Yield Compounds below self in the hierarchy.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_freud.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_freud" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_freud"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_freud</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_gmso.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_gmso" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_gmso"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_gmso</span></code></a>(**kwargs)</p></td>
+<td><p>Create a GMSO Topology from a mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_hoomdsnapshot.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_hoomdsnapshot" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_hoomdsnapshot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_hoomdsnapshot</span></code></a>(**kwargs)</p></td>
+<td><p>Create a HOOMD-Blue snapshot from an mBuild Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_intermol.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_intermol" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_intermol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_intermol</span></code></a>([molecule_types])</p></td>
+<td><p>Create an InterMol system from a Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_networkx.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_networkx" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_networkx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_networkx</span></code></a>([names_only])</p></td>
+<td><p>Create a NetworkX graph representing the hierarchy of a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_parmed.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_parmed" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_parmed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_parmed</span></code></a>([box, title, residues, ...])</p></td>
+<td><p>Create a ParmEd Structure from a Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_pybel.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_pybel" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_pybel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_pybel</span></code></a>([box, title, residues, ...])</p></td>
+<td><p>Create a pybel.Molecule from a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_rdkit.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_rdkit" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_rdkit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_rdkit</span></code></a>()</p></td>
+<td><p>Create an RDKit RWMol from an mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_smiles.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_smiles" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_smiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_smiles</span></code></a>([backend])</p></td>
+<td><p>Create a SMILES string from an mbuild compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_trajectory.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_trajectory" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.to_trajectory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.to_trajectory</span></code></a>([include_ports, chains, ...])</p></td>
+<td><p>Convert to an md.Trajectory and flatten the compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.translate.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.translate" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.translate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.translate</span></code></a>(by)</p></td>
+<td><p>Translate the Compound by a vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.translate_to.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.translate_to" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.translate_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.translate_to</span></code></a>(pos)</p></td>
+<td><p>Translate the Compound to a specific position.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.update_coordinates.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.update_coordinates" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.update_coordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.update_coordinates</span></code></a>(filename[, ...])</p></td>
+<td><p>Update the coordinates of this Compound from a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.visualize.html#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.visualize" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.visualize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TMSTB.visualize</span></code></a>([show_ports, backend, ...])</p></td>
+<td><p>Visualize the Compound using py3dmol (default) or nglview.</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">TMSTB</a><ul>
+<li><a class="reference internal" href="#mbuild_polybuild.aa_functional_groups.tmstb.TMSTB"><code class="docutils literal notranslate"><span class="pre">TMSTB</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_functional_groups.tmstb.html"
+                          title="previous chapter">tmstb</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box.html"
+                          title="next chapter">mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box.html" title="mbuild_polybuild.aa_functional_groups.tmstb.TMSTB.box"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_functional_groups.tmstb.html" title="tmstb"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mbuild_polybuild.aa_functional_groups.html" >aa_functional_groups</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="mbuild_polybuild.aa_functional_groups.tmstb.html" >tmstb</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">TMSTB</a></li> 
+      </ul>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright : Works of NIST employees are not not subject to copyright protection in the United States.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+  <!-- Taken from https://www.filamentgroup.com/lab/html-includes/#another-demo%3A-including-another-html-file -->
+  <iframe src="../_static/ntd2d_menu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  </body>
+</html>

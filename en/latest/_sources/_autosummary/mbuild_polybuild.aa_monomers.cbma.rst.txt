@@ -1,0 +1,38 @@
+cbma
+====
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.cbma
+
+mbuild_polybuild.aa_monomers.cbma
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_monomers.cbma
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Cbma
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,90 @@
+C
+=
+
+.. currentmodule:: mbuild_polybuild.aa_fragments.c_quaternary
+
+mbuild_polybuild.aa_fragments.c_quaternary.C
+
+.. autoclass:: C
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         C.box
+         C.center
+         C.charge
+         C.element
+         C.mass
+         C.maxs
+         C.mins
+         C.n_bonds
+         C.n_direct_bonds
+         C.n_particles
+         C.periodicity
+         C.pos
+         C.root
+         C.xyz
+         C.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         C.add
+         C.add_bond
+         C.all_ports
+         C.ancestors
+         C.available_ports
+         C.bonds
+         C.check_for_overlap
+         C.condense
+         C.direct_bonds
+         C.energy_minimize
+         C.flatten
+         C.freud_generate_bonds
+         C.from_gmso
+         C.from_parmed
+         C.from_pybel
+         C.from_trajectory
+         C.generate_bonds
+         C.get_boundingbox
+         C.get_smiles
+         C.is_independent
+         C.min_periodic_distance
+         C.particles
+         C.particles_by_element
+         C.particles_by_name
+         C.particles_in_range
+         C.print_hierarchy
+         C.referenced_ports
+         C.remove
+         C.remove_bond
+         C.reset_labels
+         C.rotate
+         C.rotate_dihedral
+         C.save
+         C.spin
+         C.successors
+         C.to_freud
+         C.to_gmso
+         C.to_hoomdsnapshot
+         C.to_intermol
+         C.to_networkx
+         C.to_parmed
+         C.to_pybel
+         C.to_rdkit
+         C.to_smiles
+         C.to_trajectory
+         C.translate
+         C.translate_to
+         C.update_coordinates
+         C.visualize
+   
+   

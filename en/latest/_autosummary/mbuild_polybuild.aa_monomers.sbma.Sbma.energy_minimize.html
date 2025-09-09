@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize &#8212; mBuild Polymer Builder 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/ntd2d.css?v=c867aedc" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    
+    <script src="../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="mbuild_polybuild.aa_monomers.sbma.Sbma.flatten" href="mbuild_polybuild.aa_monomers.sbma.Sbma.flatten.html" />
+    <link rel="prev" title="mbuild_polybuild.aa_monomers.sbma.Sbma.direct_bonds" href="mbuild_polybuild.aa_monomers.sbma.Sbma.direct_bonds.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJSMY46M5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RJSMY46M5C');
+  </script>
+  <!-- Old DAP UA tag -->
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c">
+  </script>
+
+   
+
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.sbma.Sbma.flatten.html" title="mbuild_polybuild.aa_monomers.sbma.Sbma.flatten"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.sbma.Sbma.direct_bonds.html" title="mbuild_polybuild.aa_monomers.sbma.Sbma.direct_bonds"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mbuild_polybuild.aa_monomers.html" >aa_monomers</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="mbuild_polybuild.aa_monomers.sbma.html" >sbma</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="mbuild_polybuild.aa_monomers.sbma.Sbma.html" accesskey="U">Sbma</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="mbuild-polybuild-aa-monomers-sbma-sbma-energy-minimize">
+<h1>mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize<a class="headerlink" href="#mbuild-polybuild-aa-monomers-sbma-sbma-energy-minimize" title="Link to this heading">¶</a></h1>
+<dl class="py method">
+<dt class="sig sig-object py" id="mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize">
+<span class="sig-prename descclassname"><span class="pre">Sbma.</span></span><span class="sig-name descname"><span class="pre">energy_minimize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">forcefield</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UFF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift_com</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">anchor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize" title="Link to this definition">¶</a></dt>
+<dd><p>Perform an energy minimization on a Compound.</p>
+<p>Default behavior utilizes <a class="reference external" href="http://openbabel.org/docs/dev/">Open Babel</a>
+to perform an energy minimization/geometry optimization on a Compound by
+applying a generic force field</p>
+<p>Can also utilize <a class="reference external" href="http://openmm.org/">OpenMM</a> to energy minimize after
+atomtyping a Compound using
+<a class="reference external" href="https://github.com/mosdef-hub/foyer">Foyer</a> to apply a forcefield XML
+file that contains valid SMARTS strings.</p>
+<p>This function is primarily intended to be used on smaller components,
+with sizes on the order of 10’s to 100’s of particles, as the energy
+minimization scales poorly with the number of particles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>steps</strong> (<em>int, optional, default=1000</em>) – The number of optimization iterations</p></li>
+<li><p><strong>forcefield</strong> (<em>str, optional, default=’UFF’</em>) – The generic force field to apply to the Compound for minimization.
+Valid options are ‘MMFF94’, ‘MMFF94s’, ‘’UFF’, ‘GAFF’, ‘Ghemical’.
+Please refer to the <a class="reference external" href="http://open-babel.readthedocs.io/en/latest/Forcefields/Overview.html">Open Babel documentation</a>
+when considering your choice of force field.
+Utilizing OpenMM for energy minimization requires a forcefield
+XML file with valid SMARTS strings. Please refer to <a class="reference external" href="http://docs.openmm.org/7.0.0/userguide/application.html#creating-force-fields">OpenMM docs</a>
+for more information.</p></li>
+<li><p><strong>shift_com</strong> (<em>bool, optional, default=True</em>) – If True, the energy-minimized Compound is translated such that the
+center-of-mass is unchanged relative to the initial configuration.</p></li>
+<li><p><strong>anchor</strong> (<em>Compound, optional, default=None</em>) – Translates the energy-minimized Compound such that the
+position of the anchor Compound is unchanged relative to the
+initial configuration.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Other Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>algorithm</strong> (<em>str, optional, default=’cg’</em>) – The energy minimization algorithm.  Valid options are ‘steep’, ‘cg’,
+and ‘md’, corresponding to steepest descent, conjugate gradient, and
+equilibrium molecular dynamics respectively.
+For _energy_minimize_openbabel</p></li>
+<li><p><strong>fixed_compounds</strong> (<em>Compound, optional, default=None</em>) – An individual Compound or list of Compounds that will have their
+position fixed during energy minimization. Note, positions are fixed
+using a restraining potential and thus may change slightly.
+Position fixing will apply to all Particles (i.e., atoms) that exist
+in the Compound and to particles in any subsequent sub-Compounds.
+By default x,y, and z position is fixed. This can be toggled by instead
+passing a list containing the Compound and an list or tuple of bool values
+corresponding to x,y and z; e.g., [Compound, (True, True, False)]
+will fix the x and y position but allow z to be free.
+For _energy_minimize_openbabel</p></li>
+<li><p><strong>ignore_compounds</strong> (<em>Compound, optional, default=None</em>) – An individual compound or list of Compounds whose underlying particles
+will have their positions fixed and not interact with other atoms via
+the specified force field during the energy minimization process.
+Note, a restraining potential used and thus absolute position may vary
+as a result of the energy minimization process.
+Interactions of these ignored atoms can  be specified by the user,
+e.g., by explicitly setting a distance constraint.
+For _energy_minimize_openbabel</p></li>
+<li><p><strong>distance_constraints</strong> (<em>list, optional, default=None</em>) – A list containing a pair of Compounds as a tuple or list and
+a float value specifying the target distance between the two Compounds, e.g.,:
+[(compound1, compound2), distance].
+To specify more than one constraint, pass constraints as a 2D list, e.g.,:
+[ [(compound1, compound2), distance1],  [(compound3, compound4), distance2] ].
+Note, Compounds specified here must represent individual point particles.
+For _energy_minimize_openbabel</p></li>
+<li><p><strong>constraint_factor</strong> (<em>float, optional, default=50000.0</em>) – Harmonic springs are used to constrain distances and fix atom positions, where
+the resulting energy associated with the spring is scaled by the
+constraint_factor; the energy of this spring is considering during the minimization.
+As such, very small values of the constraint_factor may result in an energy
+minimized state that does not adequately restrain the distance/position of atoms.
+For _energy_minimize_openbabel</p></li>
+<li><p><strong>scale_bonds</strong> (<em>float, optional, default=1</em>) – Scales the bond force constant (1 is completely on).
+For _energy_minimize_openmm</p></li>
+<li><p><strong>scale_angles</strong> (<em>float, optional, default=1</em>) – Scales the angle force constant (1 is completely on)
+For _energy_minimize_openmm</p></li>
+<li><p><strong>scale_torsions</strong> (<em>float, optional, default=1</em>) – Scales the torsional force constants (1 is completely on)
+For _energy_minimize_openmm
+Note: Only Ryckaert-Bellemans style torsions are currently supported</p></li>
+<li><p><strong>scale_nonbonded</strong> (<em>float, optional, default=1</em>) – Scales epsilon (1 is completely on)
+For _energy_minimize_openmm</p></li>
+<li><p><strong>constraints</strong> (<em>str, optional, default=”AllBonds”</em>) – Specify constraints on the molecule to minimize, options are:
+None, “HBonds”, “AllBonds”, “HAngles”
+For _energy_minimize_openmm</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">References</p>
+<p>If using _energy_minimize_openmm(), please cite:</p>
+<div role="list" class="citation-list">
+<div class="citation" id="eastman2013" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Eastman2013<span class="fn-bracket">]</span></span>
+<p>P. Eastman, M. S. Friedrichs, J. D. Chodera,
+R. J. Radmer, C. M. Bruns, J. P. Ku, K. A. Beauchamp, T. J. Lane,
+L.-P. Wang, D. Shukla, T. Tye, M. Houston, T. Stich, C. Klein,
+M. R. Shirts, and V. S. Pande. “OpenMM 4: A Reusable, Extensible,
+Hardware Independent Library for High Performance Molecular
+Simulation.” J. Chem. Theor. Comput. 9(1): 461-469. (2013).</p>
+</div>
+</div>
+<p>If using _energy_minimize_openbabel(), please cite:</p>
+<div role="list" class="citation-list">
+<div class="citation" id="oboyle2011" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>OBoyle2011<span class="fn-bracket">]</span></span>
+<p>O’Boyle, N.M.; Banck, M.; James, C.A.; Morley, C.;
+Vandermeersch, T.; Hutchison, G.R. “Open Babel: An open chemical
+toolbox.” (2011) J. Cheminf. 3, 33</p>
+</div>
+<div class="citation" id="openbabel" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>OpenBabel<span class="fn-bracket">]</span></span>
+<p>Open Babel, version X.X.X <a class="reference external" href="http://openbabel.org">http://openbabel.org</a>,
+(installed Month Year)</p>
+</div>
+</div>
+<p>If using the ‘MMFF94’ force field please also cite the following:</p>
+<div role="list" class="citation-list">
+<div class="citation" id="halgren1996a" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Halgren1996a<span class="fn-bracket">]</span></span>
+<p>T.A. Halgren, “Merck molecular force field. I. Basis,
+form, scope, parameterization, and performance of MMFF94.” (1996)
+J. Comput. Chem. 17, 490-519</p>
+</div>
+<div class="citation" id="halgren1996b" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Halgren1996b<span class="fn-bracket">]</span></span>
+<p>T.A. Halgren, “Merck molecular force field. II. MMFF94
+van der Waals and electrostatic parameters for intermolecular
+interactions.” (1996) J. Comput. Chem. 17, 520-552</p>
+</div>
+<div class="citation" id="halgren1996c" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Halgren1996c<span class="fn-bracket">]</span></span>
+<p>T.A. Halgren, “Merck molecular force field. III.
+Molecular geometries and vibrational frequencies for MMFF94.” (1996)
+J. Comput. Chem. 17, 553-586</p>
+</div>
+<div class="citation" id="halgren1996d" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Halgren1996d<span class="fn-bracket">]</span></span>
+<p>T.A. Halgren and R.B. Nachbar, “Merck molecular force
+field. IV. Conformational energies and geometries for MMFF94.” (1996)
+J. Comput. Chem. 17, 587-615</p>
+</div>
+<div class="citation" id="halgren1996e" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Halgren1996e<span class="fn-bracket">]</span></span>
+<p>T.A. Halgren, “Merck molecular force field. V.
+Extension of MMFF94 using experimental data, additional computational
+data, and empirical rules.” (1996) J. Comput. Chem. 17, 616-641</p>
+</div>
+</div>
+<p>If using the ‘MMFF94s’ force field please cite the above along with:</p>
+<div role="list" class="citation-list">
+<div class="citation" id="halgren1999" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Halgren1999<span class="fn-bracket">]</span></span>
+<p>T.A. Halgren, “MMFF VI. MMFF94s option for energy minimization
+studies.” (1999) J. Comput. Chem. 20, 720-729</p>
+</div>
+</div>
+<p>If using the ‘UFF’ force field please cite the following:</p>
+<div role="list" class="citation-list">
+<div class="citation" id="rappe1992" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Rappe1992<span class="fn-bracket">]</span></span>
+<p>Rappe, A.K., Casewit, C.J., Colwell, K.S., Goddard, W.A.
+III, Skiff, W.M. “UFF, a full periodic table force field for
+molecular mechanics and molecular dynamics simulations.” (1992)
+J. Am. Chem. Soc. 114, 10024-10039</p>
+</div>
+</div>
+<p>If using the ‘GAFF’ force field please cite the following:</p>
+<div role="list" class="citation-list">
+<div class="citation" id="wang2004" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Wang2004<span class="fn-bracket">]</span></span>
+<p>Wang, J., Wolf, R.M., Caldwell, J.W., Kollman, P.A.,
+Case, D.A. “Development and testing of a general AMBER force field”
+(2004) J. Comput. Chem. 25, 1157-1174</p>
+</div>
+</div>
+<p>If using the ‘Ghemical’ force field please cite the following:</p>
+<div role="list" class="citation-list">
+<div class="citation" id="hassinen2001" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>Hassinen2001<span class="fn-bracket">]</span></span>
+<p>T. Hassinen and M. Perakyla, “New energy terms for
+reduced protein models implemented in an off-lattice force field”
+(2001) J. Comput. Chem. 22, 1229-1242</p>
+</div>
+</div>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize</a><ul>
+<li><a class="reference internal" href="#mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize"><code class="docutils literal notranslate"><span class="pre">Sbma.energy_minimize()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_monomers.sbma.Sbma.direct_bonds.html"
+                          title="previous chapter">mbuild_polybuild.aa_monomers.sbma.Sbma.direct_bonds</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_monomers.sbma.Sbma.flatten.html"
+                          title="next chapter">mbuild_polybuild.aa_monomers.sbma.Sbma.flatten</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.sbma.Sbma.flatten.html" title="mbuild_polybuild.aa_monomers.sbma.Sbma.flatten"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.sbma.Sbma.direct_bonds.html" title="mbuild_polybuild.aa_monomers.sbma.Sbma.direct_bonds"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mbuild_polybuild.aa_monomers.html" >aa_monomers</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="mbuild_polybuild.aa_monomers.sbma.html" >sbma</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="mbuild_polybuild.aa_monomers.sbma.Sbma.html" >Sbma</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mbuild_polybuild.aa_monomers.sbma.Sbma.energy_minimize</a></li> 
+      </ul>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright : Works of NIST employees are not not subject to copyright protection in the United States.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+  <!-- Taken from https://www.filamentgroup.com/lab/html-includes/#another-demo%3A-including-another-html-file -->
+  <iframe src="../_static/ntd2d_menu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  </body>
+</html>

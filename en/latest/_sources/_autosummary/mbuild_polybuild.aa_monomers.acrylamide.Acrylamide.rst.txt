@@ -1,0 +1,90 @@
+Acrylamide
+==========
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.acrylamide
+
+mbuild_polybuild.aa_monomers.acrylamide.Acrylamide
+
+.. autoclass:: Acrylamide
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         Acrylamide.box
+         Acrylamide.center
+         Acrylamide.charge
+         Acrylamide.element
+         Acrylamide.mass
+         Acrylamide.maxs
+         Acrylamide.mins
+         Acrylamide.n_bonds
+         Acrylamide.n_direct_bonds
+         Acrylamide.n_particles
+         Acrylamide.periodicity
+         Acrylamide.pos
+         Acrylamide.root
+         Acrylamide.xyz
+         Acrylamide.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         Acrylamide.add
+         Acrylamide.add_bond
+         Acrylamide.all_ports
+         Acrylamide.ancestors
+         Acrylamide.available_ports
+         Acrylamide.bonds
+         Acrylamide.check_for_overlap
+         Acrylamide.condense
+         Acrylamide.direct_bonds
+         Acrylamide.energy_minimize
+         Acrylamide.flatten
+         Acrylamide.freud_generate_bonds
+         Acrylamide.from_gmso
+         Acrylamide.from_parmed
+         Acrylamide.from_pybel
+         Acrylamide.from_trajectory
+         Acrylamide.generate_bonds
+         Acrylamide.get_boundingbox
+         Acrylamide.get_smiles
+         Acrylamide.is_independent
+         Acrylamide.min_periodic_distance
+         Acrylamide.particles
+         Acrylamide.particles_by_element
+         Acrylamide.particles_by_name
+         Acrylamide.particles_in_range
+         Acrylamide.print_hierarchy
+         Acrylamide.referenced_ports
+         Acrylamide.remove
+         Acrylamide.remove_bond
+         Acrylamide.reset_labels
+         Acrylamide.rotate
+         Acrylamide.rotate_dihedral
+         Acrylamide.save
+         Acrylamide.spin
+         Acrylamide.successors
+         Acrylamide.to_freud
+         Acrylamide.to_gmso
+         Acrylamide.to_hoomdsnapshot
+         Acrylamide.to_intermol
+         Acrylamide.to_networkx
+         Acrylamide.to_parmed
+         Acrylamide.to_pybel
+         Acrylamide.to_rdkit
+         Acrylamide.to_smiles
+         Acrylamide.to_trajectory
+         Acrylamide.translate
+         Acrylamide.translate_to
+         Acrylamide.update_coordinates
+         Acrylamide.visualize
+   
+   

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_molecules.ion.MonatomicIon.min\_periodic\_distance
+========================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_molecules.ion
+
+.. automethod:: MonatomicIon.min_periodic_distance

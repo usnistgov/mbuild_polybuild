@@ -1,0 +1,38 @@
+phenyl
+======
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.phenyl
+
+mbuild_polybuild.aa_functional_groups.phenyl
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.phenyl
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Phenyl
+   
+   
+
+   
+   
+   
+
+
+

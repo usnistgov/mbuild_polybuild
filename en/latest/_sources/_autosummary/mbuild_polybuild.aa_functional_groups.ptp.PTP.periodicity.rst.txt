@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ptp.PTP.periodicity
+============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ptp
+
+.. autoproperty:: PTP.periodicity

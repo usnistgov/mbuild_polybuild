@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftp.TFTP.particles\_in\_range
+=======================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+.. automethod:: TFTP.particles_in_range

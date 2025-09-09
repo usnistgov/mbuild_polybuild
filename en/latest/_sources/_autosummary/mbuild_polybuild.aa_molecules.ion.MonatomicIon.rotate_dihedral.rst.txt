@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_molecules.ion.MonatomicIon.rotate\_dihedral
+=================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_molecules.ion
+
+.. automethod:: MonatomicIon.rotate_dihedral

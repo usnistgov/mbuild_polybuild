@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.phenyl.Phenyl.remove\_bond
+===================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.phenyl
+
+.. automethod:: Phenyl.remove_bond

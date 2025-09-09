@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.betaine.Betaine.center
+=====================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.betaine
+
+.. autoproperty:: Betaine.center

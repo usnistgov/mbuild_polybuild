@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.amide.Amide.get\_smiles
+================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.amide
+
+.. automethod:: Amide.get_smiles

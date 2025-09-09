@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_molecules.ion.MonatomicIon.xyz\_with\_ports
+=================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_molecules.ion
+
+.. autoproperty:: MonatomicIon.xyz_with_ports

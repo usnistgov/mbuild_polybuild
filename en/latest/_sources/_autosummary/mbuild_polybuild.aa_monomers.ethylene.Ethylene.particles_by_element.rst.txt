@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.ethylene.Ethylene.particles\_by\_element
+=======================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.ethylene
+
+.. automethod:: Ethylene.particles_by_element

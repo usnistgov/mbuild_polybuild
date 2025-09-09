@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tmstb.TMSTB.from\_trajectory
+=====================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tmstb
+
+.. automethod:: TMSTB.from_trajectory

@@ -1,0 +1,38 @@
+mea
+===
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mea
+
+mbuild_polybuild.aa_functional_groups.mea
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.mea
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      MEA
+   
+   
+
+   
+   
+   
+
+
+

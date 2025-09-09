@@ -1,0 +1,38 @@
+﻿aa\_fragments
+=============
+
+.. currentmodule:: mbuild_polybuild.aa_fragments
+
+mbuild_polybuild.aa_fragments
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_fragments
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. autosummary::
+   :toctree:
+   :template: module.rst
+   :recursive:
+
+
+   c_quaternary
+
+

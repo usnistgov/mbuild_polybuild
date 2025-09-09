@@ -1,0 +1,90 @@
+MonatomicIon
+============
+
+.. currentmodule:: mbuild_polybuild.aa_molecules.ion
+
+mbuild_polybuild.aa_molecules.ion.MonatomicIon
+
+.. autoclass:: MonatomicIon
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         MonatomicIon.box
+         MonatomicIon.center
+         MonatomicIon.charge
+         MonatomicIon.element
+         MonatomicIon.mass
+         MonatomicIon.maxs
+         MonatomicIon.mins
+         MonatomicIon.n_bonds
+         MonatomicIon.n_direct_bonds
+         MonatomicIon.n_particles
+         MonatomicIon.periodicity
+         MonatomicIon.pos
+         MonatomicIon.root
+         MonatomicIon.xyz
+         MonatomicIon.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         MonatomicIon.add
+         MonatomicIon.add_bond
+         MonatomicIon.all_ports
+         MonatomicIon.ancestors
+         MonatomicIon.available_ports
+         MonatomicIon.bonds
+         MonatomicIon.check_for_overlap
+         MonatomicIon.condense
+         MonatomicIon.direct_bonds
+         MonatomicIon.energy_minimize
+         MonatomicIon.flatten
+         MonatomicIon.freud_generate_bonds
+         MonatomicIon.from_gmso
+         MonatomicIon.from_parmed
+         MonatomicIon.from_pybel
+         MonatomicIon.from_trajectory
+         MonatomicIon.generate_bonds
+         MonatomicIon.get_boundingbox
+         MonatomicIon.get_smiles
+         MonatomicIon.is_independent
+         MonatomicIon.min_periodic_distance
+         MonatomicIon.particles
+         MonatomicIon.particles_by_element
+         MonatomicIon.particles_by_name
+         MonatomicIon.particles_in_range
+         MonatomicIon.print_hierarchy
+         MonatomicIon.referenced_ports
+         MonatomicIon.remove
+         MonatomicIon.remove_bond
+         MonatomicIon.reset_labels
+         MonatomicIon.rotate
+         MonatomicIon.rotate_dihedral
+         MonatomicIon.save
+         MonatomicIon.spin
+         MonatomicIon.successors
+         MonatomicIon.to_freud
+         MonatomicIon.to_gmso
+         MonatomicIon.to_hoomdsnapshot
+         MonatomicIon.to_intermol
+         MonatomicIon.to_networkx
+         MonatomicIon.to_parmed
+         MonatomicIon.to_pybel
+         MonatomicIon.to_rdkit
+         MonatomicIon.to_smiles
+         MonatomicIon.to_trajectory
+         MonatomicIon.translate
+         MonatomicIon.translate_to
+         MonatomicIon.update_coordinates
+         MonatomicIon.visualize
+   
+   

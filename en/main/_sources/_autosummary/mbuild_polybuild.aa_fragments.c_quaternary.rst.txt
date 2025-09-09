@@ -1,0 +1,38 @@
+c\_quaternary
+=============
+
+.. currentmodule:: mbuild_polybuild.aa_fragments.c_quaternary
+
+mbuild_polybuild.aa_fragments.c_quaternary
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_fragments.c_quaternary
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      C
+   
+   
+
+   
+   
+   
+
+
+

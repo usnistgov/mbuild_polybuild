@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.betaine.Betaine.freud\_generate\_bonds
+=====================================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.betaine
+
+.. automethod:: Betaine.freud_generate_bonds

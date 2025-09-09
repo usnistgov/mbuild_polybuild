@@ -1,0 +1,38 @@
+sbaa
+====
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.sbaa
+
+mbuild_polybuild.aa_monomers.sbaa
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_monomers.sbaa
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Sbaa
+   
+   
+
+   
+   
+   
+
+
+

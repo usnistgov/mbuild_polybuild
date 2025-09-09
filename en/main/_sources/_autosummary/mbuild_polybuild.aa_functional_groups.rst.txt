@@ -1,0 +1,71 @@
+﻿aa\_functional\_groups
+======================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups
+
+mbuild_polybuild.aa_functional_groups
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. autosummary::
+   :toctree:
+   :template: module.rst
+   :recursive:
+
+
+   amide
+
+
+   ammonium
+
+
+   ester
+
+
+   mea
+
+
+   mhta
+
+
+   mptb
+
+
+   phenyl
+
+
+   ptp
+
+
+   sulfonate
+
+
+   tftb
+
+
+   tftp
+
+
+   tmstb
+
+

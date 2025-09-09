@@ -1,0 +1,90 @@
+Methacrylate
+============
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.methacrylate
+
+mbuild_polybuild.aa_monomers.methacrylate.Methacrylate
+
+.. autoclass:: Methacrylate
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         Methacrylate.box
+         Methacrylate.center
+         Methacrylate.charge
+         Methacrylate.element
+         Methacrylate.mass
+         Methacrylate.maxs
+         Methacrylate.mins
+         Methacrylate.n_bonds
+         Methacrylate.n_direct_bonds
+         Methacrylate.n_particles
+         Methacrylate.periodicity
+         Methacrylate.pos
+         Methacrylate.root
+         Methacrylate.xyz
+         Methacrylate.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         Methacrylate.add
+         Methacrylate.add_bond
+         Methacrylate.all_ports
+         Methacrylate.ancestors
+         Methacrylate.available_ports
+         Methacrylate.bonds
+         Methacrylate.check_for_overlap
+         Methacrylate.condense
+         Methacrylate.direct_bonds
+         Methacrylate.energy_minimize
+         Methacrylate.flatten
+         Methacrylate.freud_generate_bonds
+         Methacrylate.from_gmso
+         Methacrylate.from_parmed
+         Methacrylate.from_pybel
+         Methacrylate.from_trajectory
+         Methacrylate.generate_bonds
+         Methacrylate.get_boundingbox
+         Methacrylate.get_smiles
+         Methacrylate.is_independent
+         Methacrylate.min_periodic_distance
+         Methacrylate.particles
+         Methacrylate.particles_by_element
+         Methacrylate.particles_by_name
+         Methacrylate.particles_in_range
+         Methacrylate.print_hierarchy
+         Methacrylate.referenced_ports
+         Methacrylate.remove
+         Methacrylate.remove_bond
+         Methacrylate.reset_labels
+         Methacrylate.rotate
+         Methacrylate.rotate_dihedral
+         Methacrylate.save
+         Methacrylate.spin
+         Methacrylate.successors
+         Methacrylate.to_freud
+         Methacrylate.to_gmso
+         Methacrylate.to_hoomdsnapshot
+         Methacrylate.to_intermol
+         Methacrylate.to_networkx
+         Methacrylate.to_parmed
+         Methacrylate.to_pybel
+         Methacrylate.to_rdkit
+         Methacrylate.to_smiles
+         Methacrylate.to_trajectory
+         Methacrylate.translate
+         Methacrylate.translate_to
+         Methacrylate.update_coordinates
+         Methacrylate.visualize
+   
+   

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mptb.MPTB.successors
+=============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mptb
+
+.. automethod:: MPTB.successors

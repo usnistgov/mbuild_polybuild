@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.cbma.Cbma.particles\_in\_range
+=============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.cbma
+
+.. automethod:: Cbma.particles_in_range

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_fragments.c\_quaternary.C.freud\_generate\_bonds
+======================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_fragments.c_quaternary
+
+.. automethod:: C.freud_generate_bonds

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftp.TFTP.min\_periodic\_distance
+==========================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+.. automethod:: TFTP.min_periodic_distance

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_fragments.c\_quaternary.C.check\_for\_overlap
+===================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_fragments.c_quaternary
+
+.. automethod:: C.check_for_overlap

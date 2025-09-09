@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ammonium.Ammonium.remove\_bond
+=======================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ammonium
+
+.. automethod:: Ammonium.remove_bond

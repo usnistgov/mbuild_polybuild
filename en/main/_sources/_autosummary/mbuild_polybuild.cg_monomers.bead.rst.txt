@@ -1,0 +1,38 @@
+bead
+====
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.bead
+
+mbuild_polybuild.cg_monomers.bead
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.cg_monomers.bead
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Bead
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftb.TFTB.to\_gmso
+===========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftb
+
+.. automethod:: TFTB.to_gmso

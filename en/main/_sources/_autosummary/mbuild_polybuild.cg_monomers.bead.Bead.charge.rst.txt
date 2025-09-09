@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.bead.Bead.charge
+===============================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.bead
+
+.. autoproperty:: Bead.charge

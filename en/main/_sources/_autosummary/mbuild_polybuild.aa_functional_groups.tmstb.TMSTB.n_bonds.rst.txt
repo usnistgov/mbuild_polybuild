@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tmstb.TMSTB.n\_bonds
+=============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tmstb
+
+.. autoproperty:: TMSTB.n_bonds

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.sulfonate.Sulfonate.check\_for\_overlap
+================================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.sulfonate
+
+.. automethod:: Sulfonate.check_for_overlap

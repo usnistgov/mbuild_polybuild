@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftb.TFTB.freud\_generate\_bonds
+=========================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftb
+
+.. automethod:: TFTB.freud_generate_bonds

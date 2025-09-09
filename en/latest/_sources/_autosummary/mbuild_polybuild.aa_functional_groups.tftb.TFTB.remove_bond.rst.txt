@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftb.TFTB.remove\_bond
+===============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftb
+
+.. automethod:: TFTB.remove_bond

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_molecules.ion.MonatomicIon.n\_particles
+=============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_molecules.ion
+
+.. autoproperty:: MonatomicIon.n_particles

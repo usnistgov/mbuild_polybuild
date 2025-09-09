@@ -1,0 +1,38 @@
+ethylene
+========
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.ethylene
+
+mbuild_polybuild.aa_monomers.ethylene
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_monomers.ethylene
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Ethylene
+   
+   
+
+   
+   
+   
+
+
+

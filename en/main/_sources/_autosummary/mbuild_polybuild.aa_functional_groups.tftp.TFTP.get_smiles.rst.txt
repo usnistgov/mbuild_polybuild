@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftp.TFTP.get\_smiles
+==============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+.. automethod:: TFTP.get_smiles

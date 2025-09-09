@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.betaine.Betaine.translate\_to
+============================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.betaine
+
+.. automethod:: Betaine.translate_to

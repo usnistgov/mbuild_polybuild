@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mhta.MHTA.freud\_generate\_bonds
+=========================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mhta
+
+.. automethod:: MHTA.freud_generate_bonds

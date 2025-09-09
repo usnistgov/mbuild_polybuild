@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.acrylamide.Acrylamide.reset\_labels
+==================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.acrylamide
+
+.. automethod:: Acrylamide.reset_labels

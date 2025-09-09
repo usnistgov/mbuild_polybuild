@@ -1,0 +1,90 @@
+TMSTB
+=====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tmstb
+
+mbuild_polybuild.aa_functional_groups.tmstb.TMSTB
+
+.. autoclass:: TMSTB
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         TMSTB.box
+         TMSTB.center
+         TMSTB.charge
+         TMSTB.element
+         TMSTB.mass
+         TMSTB.maxs
+         TMSTB.mins
+         TMSTB.n_bonds
+         TMSTB.n_direct_bonds
+         TMSTB.n_particles
+         TMSTB.periodicity
+         TMSTB.pos
+         TMSTB.root
+         TMSTB.xyz
+         TMSTB.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         TMSTB.add
+         TMSTB.add_bond
+         TMSTB.all_ports
+         TMSTB.ancestors
+         TMSTB.available_ports
+         TMSTB.bonds
+         TMSTB.check_for_overlap
+         TMSTB.condense
+         TMSTB.direct_bonds
+         TMSTB.energy_minimize
+         TMSTB.flatten
+         TMSTB.freud_generate_bonds
+         TMSTB.from_gmso
+         TMSTB.from_parmed
+         TMSTB.from_pybel
+         TMSTB.from_trajectory
+         TMSTB.generate_bonds
+         TMSTB.get_boundingbox
+         TMSTB.get_smiles
+         TMSTB.is_independent
+         TMSTB.min_periodic_distance
+         TMSTB.particles
+         TMSTB.particles_by_element
+         TMSTB.particles_by_name
+         TMSTB.particles_in_range
+         TMSTB.print_hierarchy
+         TMSTB.referenced_ports
+         TMSTB.remove
+         TMSTB.remove_bond
+         TMSTB.reset_labels
+         TMSTB.rotate
+         TMSTB.rotate_dihedral
+         TMSTB.save
+         TMSTB.spin
+         TMSTB.successors
+         TMSTB.to_freud
+         TMSTB.to_gmso
+         TMSTB.to_hoomdsnapshot
+         TMSTB.to_intermol
+         TMSTB.to_networkx
+         TMSTB.to_parmed
+         TMSTB.to_pybel
+         TMSTB.to_rdkit
+         TMSTB.to_smiles
+         TMSTB.to_trajectory
+         TMSTB.translate
+         TMSTB.translate_to
+         TMSTB.update_coordinates
+         TMSTB.visualize
+   
+   

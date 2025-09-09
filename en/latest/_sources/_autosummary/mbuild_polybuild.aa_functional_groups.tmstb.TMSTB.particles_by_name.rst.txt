@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tmstb.TMSTB.particles\_by\_name
+========================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tmstb
+
+.. automethod:: TMSTB.particles_by_name

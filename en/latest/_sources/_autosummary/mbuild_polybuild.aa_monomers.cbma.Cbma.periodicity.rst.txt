@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.cbma.Cbma.periodicity
+====================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.cbma
+
+.. autoproperty:: Cbma.periodicity

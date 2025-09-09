@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tmstb.TMSTB.from\_pybel
+================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tmstb
+
+.. automethod:: TMSTB.from_pybel

@@ -1,0 +1,6 @@
+random\_sequence
+================
+
+.. currentmodule:: mbuild_polybuild.toolbox
+
+.. autofunction:: random_sequence

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ester.Ester.min\_periodic\_distance
+============================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ester
+
+.. automethod:: Ester.min_periodic_distance

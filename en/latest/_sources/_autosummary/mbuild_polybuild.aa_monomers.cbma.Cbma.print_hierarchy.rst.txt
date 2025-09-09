@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.cbma.Cbma.print\_hierarchy
+=========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.cbma
+
+.. automethod:: Cbma.print_hierarchy

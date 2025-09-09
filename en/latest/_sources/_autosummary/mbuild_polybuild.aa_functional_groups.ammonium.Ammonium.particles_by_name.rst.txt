@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ammonium.Ammonium.particles\_by\_name
+==============================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ammonium
+
+.. automethod:: Ammonium.particles_by_name

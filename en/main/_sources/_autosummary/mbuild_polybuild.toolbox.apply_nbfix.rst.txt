@@ -1,0 +1,6 @@
+apply\_nbfix
+============
+
+.. currentmodule:: mbuild_polybuild.toolbox
+
+.. autofunction:: apply_nbfix

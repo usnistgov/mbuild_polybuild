@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_fragments.c\_quaternary.C.pos
+===================================================
+
+.. currentmodule:: mbuild_polybuild.aa_fragments.c_quaternary
+
+.. autoproperty:: C.pos

@@ -1,0 +1,38 @@
+ammonium
+========
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ammonium
+
+mbuild_polybuild.aa_functional_groups.ammonium
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.ammonium
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Ammonium
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.sbaa.Sbaa.energy\_minimize
+=========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.sbaa
+
+.. automethod:: Sbaa.energy_minimize

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ptp.PTP.to\_intermol
+=============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ptp
+
+.. automethod:: PTP.to_intermol

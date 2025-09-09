@@ -1,0 +1,53 @@
+﻿aa\_monomers
+============
+
+.. currentmodule:: mbuild_polybuild.aa_monomers
+
+mbuild_polybuild.aa_monomers
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_monomers
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. autosummary::
+   :toctree:
+   :template: module.rst
+   :recursive:
+
+
+   acrylamide
+
+
+   cbma
+
+
+   ethylene
+
+
+   methacrylate
+
+
+   sbaa
+
+
+   sbma
+
+

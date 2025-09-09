@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.methacrylate.Methacrylate.reset\_labels
+======================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.methacrylate
+
+.. automethod:: Methacrylate.reset_labels

@@ -1,0 +1,90 @@
+MPTB
+====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mptb
+
+mbuild_polybuild.aa_functional_groups.mptb.MPTB
+
+.. autoclass:: MPTB
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         MPTB.box
+         MPTB.center
+         MPTB.charge
+         MPTB.element
+         MPTB.mass
+         MPTB.maxs
+         MPTB.mins
+         MPTB.n_bonds
+         MPTB.n_direct_bonds
+         MPTB.n_particles
+         MPTB.periodicity
+         MPTB.pos
+         MPTB.root
+         MPTB.xyz
+         MPTB.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         MPTB.add
+         MPTB.add_bond
+         MPTB.all_ports
+         MPTB.ancestors
+         MPTB.available_ports
+         MPTB.bonds
+         MPTB.check_for_overlap
+         MPTB.condense
+         MPTB.direct_bonds
+         MPTB.energy_minimize
+         MPTB.flatten
+         MPTB.freud_generate_bonds
+         MPTB.from_gmso
+         MPTB.from_parmed
+         MPTB.from_pybel
+         MPTB.from_trajectory
+         MPTB.generate_bonds
+         MPTB.get_boundingbox
+         MPTB.get_smiles
+         MPTB.is_independent
+         MPTB.min_periodic_distance
+         MPTB.particles
+         MPTB.particles_by_element
+         MPTB.particles_by_name
+         MPTB.particles_in_range
+         MPTB.print_hierarchy
+         MPTB.referenced_ports
+         MPTB.remove
+         MPTB.remove_bond
+         MPTB.reset_labels
+         MPTB.rotate
+         MPTB.rotate_dihedral
+         MPTB.save
+         MPTB.spin
+         MPTB.successors
+         MPTB.to_freud
+         MPTB.to_gmso
+         MPTB.to_hoomdsnapshot
+         MPTB.to_intermol
+         MPTB.to_networkx
+         MPTB.to_parmed
+         MPTB.to_pybel
+         MPTB.to_rdkit
+         MPTB.to_smiles
+         MPTB.to_trajectory
+         MPTB.translate
+         MPTB.translate_to
+         MPTB.update_coordinates
+         MPTB.visualize
+   
+   

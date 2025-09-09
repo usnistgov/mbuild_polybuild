@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.methacrylate.Methacrylate.print\_hierarchy
+=========================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.methacrylate
+
+.. automethod:: Methacrylate.print_hierarchy

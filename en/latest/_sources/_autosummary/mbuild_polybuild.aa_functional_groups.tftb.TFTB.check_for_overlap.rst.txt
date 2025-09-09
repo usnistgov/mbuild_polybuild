@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftb.TFTB.check\_for\_overlap
+======================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftb
+
+.. automethod:: TFTB.check_for_overlap

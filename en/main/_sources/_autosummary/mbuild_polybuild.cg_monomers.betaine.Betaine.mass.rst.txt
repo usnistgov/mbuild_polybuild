@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.betaine.Betaine.mass
+===================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.betaine
+
+.. autoproperty:: Betaine.mass

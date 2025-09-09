@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.bead.Bead.to\_parmed
+===================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.bead
+
+.. automethod:: Bead.to_parmed

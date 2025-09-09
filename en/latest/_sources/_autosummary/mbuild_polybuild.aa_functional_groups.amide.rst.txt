@@ -1,0 +1,38 @@
+amide
+=====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.amide
+
+mbuild_polybuild.aa_functional_groups.amide
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.amide
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Amide
+   
+   
+
+   
+   
+   
+
+
+

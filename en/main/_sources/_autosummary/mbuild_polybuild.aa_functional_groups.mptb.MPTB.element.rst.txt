@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mptb.MPTB.element
+==========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mptb
+
+.. autoproperty:: MPTB.element

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_fragments.c\_quaternary.C.get\_smiles
+===========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_fragments.c_quaternary
+
+.. automethod:: C.get_smiles

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.phenyl.Phenyl.mass
+===========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.phenyl
+
+.. autoproperty:: Phenyl.mass

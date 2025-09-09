@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.sulfonate.Sulfonate.add
+================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.sulfonate
+
+.. automethod:: Sulfonate.add

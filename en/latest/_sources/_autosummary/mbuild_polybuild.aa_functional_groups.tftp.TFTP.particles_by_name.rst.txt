@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftp.TFTP.particles\_by\_name
+======================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+.. automethod:: TFTP.particles_by_name

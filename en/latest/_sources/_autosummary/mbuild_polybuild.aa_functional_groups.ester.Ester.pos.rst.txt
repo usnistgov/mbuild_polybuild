@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ester.Ester.pos
+========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ester
+
+.. autoproperty:: Ester.pos

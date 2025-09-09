@@ -1,0 +1,90 @@
+MHTA
+====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mhta
+
+mbuild_polybuild.aa_functional_groups.mhta.MHTA
+
+.. autoclass:: MHTA
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         MHTA.box
+         MHTA.center
+         MHTA.charge
+         MHTA.element
+         MHTA.mass
+         MHTA.maxs
+         MHTA.mins
+         MHTA.n_bonds
+         MHTA.n_direct_bonds
+         MHTA.n_particles
+         MHTA.periodicity
+         MHTA.pos
+         MHTA.root
+         MHTA.xyz
+         MHTA.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         MHTA.add
+         MHTA.add_bond
+         MHTA.all_ports
+         MHTA.ancestors
+         MHTA.available_ports
+         MHTA.bonds
+         MHTA.check_for_overlap
+         MHTA.condense
+         MHTA.direct_bonds
+         MHTA.energy_minimize
+         MHTA.flatten
+         MHTA.freud_generate_bonds
+         MHTA.from_gmso
+         MHTA.from_parmed
+         MHTA.from_pybel
+         MHTA.from_trajectory
+         MHTA.generate_bonds
+         MHTA.get_boundingbox
+         MHTA.get_smiles
+         MHTA.is_independent
+         MHTA.min_periodic_distance
+         MHTA.particles
+         MHTA.particles_by_element
+         MHTA.particles_by_name
+         MHTA.particles_in_range
+         MHTA.print_hierarchy
+         MHTA.referenced_ports
+         MHTA.remove
+         MHTA.remove_bond
+         MHTA.reset_labels
+         MHTA.rotate
+         MHTA.rotate_dihedral
+         MHTA.save
+         MHTA.spin
+         MHTA.successors
+         MHTA.to_freud
+         MHTA.to_gmso
+         MHTA.to_hoomdsnapshot
+         MHTA.to_intermol
+         MHTA.to_networkx
+         MHTA.to_parmed
+         MHTA.to_pybel
+         MHTA.to_rdkit
+         MHTA.to_smiles
+         MHTA.to_trajectory
+         MHTA.translate
+         MHTA.translate_to
+         MHTA.update_coordinates
+         MHTA.visualize
+   
+   

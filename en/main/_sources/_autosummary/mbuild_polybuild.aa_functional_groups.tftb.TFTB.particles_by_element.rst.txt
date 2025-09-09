@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftb.TFTB.particles\_by\_element
+=========================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftb
+
+.. automethod:: TFTB.particles_by_element

@@ -1,0 +1,90 @@
+Phenyl
+======
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.phenyl
+
+mbuild_polybuild.aa_functional_groups.phenyl.Phenyl
+
+.. autoclass:: Phenyl
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         Phenyl.box
+         Phenyl.center
+         Phenyl.charge
+         Phenyl.element
+         Phenyl.mass
+         Phenyl.maxs
+         Phenyl.mins
+         Phenyl.n_bonds
+         Phenyl.n_direct_bonds
+         Phenyl.n_particles
+         Phenyl.periodicity
+         Phenyl.pos
+         Phenyl.root
+         Phenyl.xyz
+         Phenyl.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         Phenyl.add
+         Phenyl.add_bond
+         Phenyl.all_ports
+         Phenyl.ancestors
+         Phenyl.available_ports
+         Phenyl.bonds
+         Phenyl.check_for_overlap
+         Phenyl.condense
+         Phenyl.direct_bonds
+         Phenyl.energy_minimize
+         Phenyl.flatten
+         Phenyl.freud_generate_bonds
+         Phenyl.from_gmso
+         Phenyl.from_parmed
+         Phenyl.from_pybel
+         Phenyl.from_trajectory
+         Phenyl.generate_bonds
+         Phenyl.get_boundingbox
+         Phenyl.get_smiles
+         Phenyl.is_independent
+         Phenyl.min_periodic_distance
+         Phenyl.particles
+         Phenyl.particles_by_element
+         Phenyl.particles_by_name
+         Phenyl.particles_in_range
+         Phenyl.print_hierarchy
+         Phenyl.referenced_ports
+         Phenyl.remove
+         Phenyl.remove_bond
+         Phenyl.reset_labels
+         Phenyl.rotate
+         Phenyl.rotate_dihedral
+         Phenyl.save
+         Phenyl.spin
+         Phenyl.successors
+         Phenyl.to_freud
+         Phenyl.to_gmso
+         Phenyl.to_hoomdsnapshot
+         Phenyl.to_intermol
+         Phenyl.to_networkx
+         Phenyl.to_parmed
+         Phenyl.to_pybel
+         Phenyl.to_rdkit
+         Phenyl.to_smiles
+         Phenyl.to_trajectory
+         Phenyl.translate
+         Phenyl.translate_to
+         Phenyl.update_coordinates
+         Phenyl.visualize
+   
+   

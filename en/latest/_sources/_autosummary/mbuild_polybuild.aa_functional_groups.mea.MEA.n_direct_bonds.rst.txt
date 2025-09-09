@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mea.MEA.n\_direct\_bonds
+=================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mea
+
+.. autoproperty:: MEA.n_direct_bonds

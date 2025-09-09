@@ -1,0 +1,90 @@
+Sulfonate
+=========
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.sulfonate
+
+mbuild_polybuild.aa_functional_groups.sulfonate.Sulfonate
+
+.. autoclass:: Sulfonate
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         Sulfonate.box
+         Sulfonate.center
+         Sulfonate.charge
+         Sulfonate.element
+         Sulfonate.mass
+         Sulfonate.maxs
+         Sulfonate.mins
+         Sulfonate.n_bonds
+         Sulfonate.n_direct_bonds
+         Sulfonate.n_particles
+         Sulfonate.periodicity
+         Sulfonate.pos
+         Sulfonate.root
+         Sulfonate.xyz
+         Sulfonate.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         Sulfonate.add
+         Sulfonate.add_bond
+         Sulfonate.all_ports
+         Sulfonate.ancestors
+         Sulfonate.available_ports
+         Sulfonate.bonds
+         Sulfonate.check_for_overlap
+         Sulfonate.condense
+         Sulfonate.direct_bonds
+         Sulfonate.energy_minimize
+         Sulfonate.flatten
+         Sulfonate.freud_generate_bonds
+         Sulfonate.from_gmso
+         Sulfonate.from_parmed
+         Sulfonate.from_pybel
+         Sulfonate.from_trajectory
+         Sulfonate.generate_bonds
+         Sulfonate.get_boundingbox
+         Sulfonate.get_smiles
+         Sulfonate.is_independent
+         Sulfonate.min_periodic_distance
+         Sulfonate.particles
+         Sulfonate.particles_by_element
+         Sulfonate.particles_by_name
+         Sulfonate.particles_in_range
+         Sulfonate.print_hierarchy
+         Sulfonate.referenced_ports
+         Sulfonate.remove
+         Sulfonate.remove_bond
+         Sulfonate.reset_labels
+         Sulfonate.rotate
+         Sulfonate.rotate_dihedral
+         Sulfonate.save
+         Sulfonate.spin
+         Sulfonate.successors
+         Sulfonate.to_freud
+         Sulfonate.to_gmso
+         Sulfonate.to_hoomdsnapshot
+         Sulfonate.to_intermol
+         Sulfonate.to_networkx
+         Sulfonate.to_parmed
+         Sulfonate.to_pybel
+         Sulfonate.to_rdkit
+         Sulfonate.to_smiles
+         Sulfonate.to_trajectory
+         Sulfonate.translate
+         Sulfonate.translate_to
+         Sulfonate.update_coordinates
+         Sulfonate.visualize
+   
+   

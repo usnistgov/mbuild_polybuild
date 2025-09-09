@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Cbma &#8212; mBuild Polymer Builder 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/ntd2d.css?v=c867aedc" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    
+    <script src="../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="mbuild_polybuild.aa_monomers.cbma.Cbma.box" href="mbuild_polybuild.aa_monomers.cbma.Cbma.box.html" />
+    <link rel="prev" title="cbma" href="mbuild_polybuild.aa_monomers.cbma.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJSMY46M5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RJSMY46M5C');
+  </script>
+  <!-- Old DAP UA tag -->
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c">
+  </script>
+
+   
+
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.cbma.Cbma.box.html" title="mbuild_polybuild.aa_monomers.cbma.Cbma.box"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.cbma.html" title="cbma"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mbuild_polybuild.aa_monomers.html" >aa_monomers</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="mbuild_polybuild.aa_monomers.cbma.html" accesskey="U">cbma</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Cbma</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="cbma">
+<h1>Cbma<a class="headerlink" href="#cbma" title="Link to this heading">¶</a></h1>
+<p>mbuild_polybuild.aa_monomers.cbma.Cbma</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mbuild_polybuild.aa_monomers.cbma.Cbma">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mbuild_polybuild.aa_monomers.cbma.</span></span><span class="sig-name descname"><span class="pre">Cbma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spacer_backbone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spacer_ion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">switch_backbone_chiral</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mbuild_polybuild/aa_monomers/cbma.html#Cbma"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mbuild_polybuild.aa_monomers.cbma.Cbma" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Compound</span></code></p>
+<p>A carboxybetaine methacrylate monomer.</p>
+<p>This class uses a custom ester Compound.</p>
+<section id="ports">
+<h2>Ports<a class="headerlink" href="#ports" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>up: Quaternary carbon backbone.</p></li>
+<li><p>down: Secondary carbon backbone.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>spacer_backbone</strong> (<em>int, optional, default=2</em>) – Number of methylene groups between the backbone group and the first ion.</p></li>
+<li><p><strong>spacer_ion</strong> (<em>int, optional, default=2</em>) – Number of methylene groups between the backbone group and the second ion.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mbuild_polybuild.aa_monomers.cbma</span> <span class="kn">import</span> <span class="n">Cbma</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cbma</span> <span class="o">=</span> <span class="n">Cbma</span><span class="p">(</span><span class="n">spacer_backbone</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">spacer_ion</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cbma</span><span class="o">.</span><span class="n">visualize</span><span class="p">()</span>
+</pre></div>
+</div>
+<blockquote>
+<div><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.box.html#mbuild_polybuild.aa_monomers.cbma.Cbma.box" title="mbuild_polybuild.aa_monomers.cbma.Cbma.box"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.box</span></code></a></p></td>
+<td><p>Get the box of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.center.html#mbuild_polybuild.aa_monomers.cbma.Cbma.center" title="mbuild_polybuild.aa_monomers.cbma.Cbma.center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.center</span></code></a></p></td>
+<td><p>Get the cartesian center of the Compound based on its Particles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.charge.html#mbuild_polybuild.aa_monomers.cbma.Cbma.charge" title="mbuild_polybuild.aa_monomers.cbma.Cbma.charge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.charge</span></code></a></p></td>
+<td><p>Return the total charge of a compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.element.html#mbuild_polybuild.aa_monomers.cbma.Cbma.element" title="mbuild_polybuild.aa_monomers.cbma.Cbma.element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.element</span></code></a></p></td>
+<td><p>Get the element of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.mass.html#mbuild_polybuild.aa_monomers.cbma.Cbma.mass" title="mbuild_polybuild.aa_monomers.cbma.Cbma.mass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.mass</span></code></a></p></td>
+<td><p>Return the total mass of a compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.maxs.html#mbuild_polybuild.aa_monomers.cbma.Cbma.maxs" title="mbuild_polybuild.aa_monomers.cbma.Cbma.maxs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.maxs</span></code></a></p></td>
+<td><p>Return the maximum x, y, z coordinate of any particle in this compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.mins.html#mbuild_polybuild.aa_monomers.cbma.Cbma.mins" title="mbuild_polybuild.aa_monomers.cbma.Cbma.mins"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.mins</span></code></a></p></td>
+<td><p>Return the mimimum x, y, z coordinate of any particle in this compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.n_bonds.html#mbuild_polybuild.aa_monomers.cbma.Cbma.n_bonds" title="mbuild_polybuild.aa_monomers.cbma.Cbma.n_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.n_bonds</span></code></a></p></td>
+<td><p>Return the total number of bonds in the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.n_direct_bonds.html#mbuild_polybuild.aa_monomers.cbma.Cbma.n_direct_bonds" title="mbuild_polybuild.aa_monomers.cbma.Cbma.n_direct_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.n_direct_bonds</span></code></a></p></td>
+<td><p>Return the number of bonds a particle is directly involved in.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.n_particles.html#mbuild_polybuild.aa_monomers.cbma.Cbma.n_particles" title="mbuild_polybuild.aa_monomers.cbma.Cbma.n_particles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.n_particles</span></code></a></p></td>
+<td><p>Return the number of Particles in the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.periodicity.html#mbuild_polybuild.aa_monomers.cbma.Cbma.periodicity" title="mbuild_polybuild.aa_monomers.cbma.Cbma.periodicity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.periodicity</span></code></a></p></td>
+<td><p>Get the periodicity of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.pos.html#mbuild_polybuild.aa_monomers.cbma.Cbma.pos" title="mbuild_polybuild.aa_monomers.cbma.Cbma.pos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.pos</span></code></a></p></td>
+<td><p>Get the position of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.root.html#mbuild_polybuild.aa_monomers.cbma.Cbma.root" title="mbuild_polybuild.aa_monomers.cbma.Cbma.root"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.root</span></code></a></p></td>
+<td><p>Get the Compound at the top of self's hierarchy.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.xyz.html#mbuild_polybuild.aa_monomers.cbma.Cbma.xyz" title="mbuild_polybuild.aa_monomers.cbma.Cbma.xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.xyz</span></code></a></p></td>
+<td><p>Return all particle coordinates in this compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.xyz_with_ports.html#mbuild_polybuild.aa_monomers.cbma.Cbma.xyz_with_ports" title="mbuild_polybuild.aa_monomers.cbma.Cbma.xyz_with_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.xyz_with_ports</span></code></a></p></td>
+<td><p>Return all particle coordinates in this compound including ports.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.add.html#mbuild_polybuild.aa_monomers.cbma.Cbma.add" title="mbuild_polybuild.aa_monomers.cbma.Cbma.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.add</span></code></a>(new_child[, label, containment, ...])</p></td>
+<td><p>Add a part to the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.add_bond.html#mbuild_polybuild.aa_monomers.cbma.Cbma.add_bond" title="mbuild_polybuild.aa_monomers.cbma.Cbma.add_bond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.add_bond</span></code></a>(particle_pair[, bond_order])</p></td>
+<td><p>Add a bond between two Particles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.all_ports.html#mbuild_polybuild.aa_monomers.cbma.Cbma.all_ports" title="mbuild_polybuild.aa_monomers.cbma.Cbma.all_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.all_ports</span></code></a>()</p></td>
+<td><p>Return all Ports referenced by this Compound and its successors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.ancestors.html#mbuild_polybuild.aa_monomers.cbma.Cbma.ancestors" title="mbuild_polybuild.aa_monomers.cbma.Cbma.ancestors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.ancestors</span></code></a>()</p></td>
+<td><p>Generate all ancestors of the Compound recursively.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.available_ports.html#mbuild_polybuild.aa_monomers.cbma.Cbma.available_ports" title="mbuild_polybuild.aa_monomers.cbma.Cbma.available_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.available_ports</span></code></a>()</p></td>
+<td><p>Return all unoccupied Ports referenced by this Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.bonds.html#mbuild_polybuild.aa_monomers.cbma.Cbma.bonds" title="mbuild_polybuild.aa_monomers.cbma.Cbma.bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.bonds</span></code></a>([return_bond_order])</p></td>
+<td><p>Return all bonds in the Compound and sub-Compounds.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.check_for_overlap.html#mbuild_polybuild.aa_monomers.cbma.Cbma.check_for_overlap" title="mbuild_polybuild.aa_monomers.cbma.Cbma.check_for_overlap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.check_for_overlap</span></code></a>(excluded_bond_depth)</p></td>
+<td><p>Check if a compound contains overlapping particles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.condense.html#mbuild_polybuild.aa_monomers.cbma.Cbma.condense" title="mbuild_polybuild.aa_monomers.cbma.Cbma.condense"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.condense</span></code></a>([inplace])</p></td>
+<td><p>Condense the hierarchical structure of the Compound to the level of molecules.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.direct_bonds.html#mbuild_polybuild.aa_monomers.cbma.Cbma.direct_bonds" title="mbuild_polybuild.aa_monomers.cbma.Cbma.direct_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.direct_bonds</span></code></a>([graph_depth])</p></td>
+<td><p>Return a list of particles that this particle bonds to.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.energy_minimize.html#mbuild_polybuild.aa_monomers.cbma.Cbma.energy_minimize" title="mbuild_polybuild.aa_monomers.cbma.Cbma.energy_minimize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.energy_minimize</span></code></a>([forcefield, steps, ...])</p></td>
+<td><p>Perform an energy minimization on a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.flatten.html#mbuild_polybuild.aa_monomers.cbma.Cbma.flatten" title="mbuild_polybuild.aa_monomers.cbma.Cbma.flatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.flatten</span></code></a>([inplace])</p></td>
+<td><p>Flatten the hierarchical structure of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.freud_generate_bonds.html#mbuild_polybuild.aa_monomers.cbma.Cbma.freud_generate_bonds" title="mbuild_polybuild.aa_monomers.cbma.Cbma.freud_generate_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.freud_generate_bonds</span></code></a>(name_a, name_b, ...)</p></td>
+<td><p>Add Bonds between all pairs of types a/b within [dmin, dmax].</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.from_gmso.html#mbuild_polybuild.aa_monomers.cbma.Cbma.from_gmso" title="mbuild_polybuild.aa_monomers.cbma.Cbma.from_gmso"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.from_gmso</span></code></a>(topology[, coords_only, ...])</p></td>
+<td><p>Convert a GMSO Topology to mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.from_parmed.html#mbuild_polybuild.aa_monomers.cbma.Cbma.from_parmed" title="mbuild_polybuild.aa_monomers.cbma.Cbma.from_parmed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.from_parmed</span></code></a>(structure[, coords_only, ...])</p></td>
+<td><p>Extract atoms and bonds from a pmd.Structure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.from_pybel.html#mbuild_polybuild.aa_monomers.cbma.Cbma.from_pybel" title="mbuild_polybuild.aa_monomers.cbma.Cbma.from_pybel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.from_pybel</span></code></a>(pybel_mol[, use_element, ...])</p></td>
+<td><p>Create a Compound from a Pybel.Molecule.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.from_trajectory.html#mbuild_polybuild.aa_monomers.cbma.Cbma.from_trajectory" title="mbuild_polybuild.aa_monomers.cbma.Cbma.from_trajectory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.from_trajectory</span></code></a>(traj[, frame, ...])</p></td>
+<td><p>Extract atoms and bonds from a md.Trajectory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.generate_bonds.html#mbuild_polybuild.aa_monomers.cbma.Cbma.generate_bonds" title="mbuild_polybuild.aa_monomers.cbma.Cbma.generate_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.generate_bonds</span></code></a>(name_a, name_b, dmin, dmax)</p></td>
+<td><p>Add Bonds between all pairs of types a/b within [dmin, dmax].</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.get_boundingbox.html#mbuild_polybuild.aa_monomers.cbma.Cbma.get_boundingbox" title="mbuild_polybuild.aa_monomers.cbma.Cbma.get_boundingbox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.get_boundingbox</span></code></a>([pad_box])</p></td>
+<td><p>Compute the bounding box of the compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.get_smiles.html#mbuild_polybuild.aa_monomers.cbma.Cbma.get_smiles" title="mbuild_polybuild.aa_monomers.cbma.Cbma.get_smiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.get_smiles</span></code></a>()</p></td>
+<td><p>Get SMILES string for compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.is_independent.html#mbuild_polybuild.aa_monomers.cbma.Cbma.is_independent" title="mbuild_polybuild.aa_monomers.cbma.Cbma.is_independent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.is_independent</span></code></a>()</p></td>
+<td><p>Return True if there is no bond between particles of the Compound to an external Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.min_periodic_distance.html#mbuild_polybuild.aa_monomers.cbma.Cbma.min_periodic_distance" title="mbuild_polybuild.aa_monomers.cbma.Cbma.min_periodic_distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.min_periodic_distance</span></code></a>(xyz0, xyz1)</p></td>
+<td><p>Vectorized distance calculation considering minimum image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.particles.html#mbuild_polybuild.aa_monomers.cbma.Cbma.particles" title="mbuild_polybuild.aa_monomers.cbma.Cbma.particles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.particles</span></code></a>([include_ports])</p></td>
+<td><p>Return all Particles of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.particles_by_element.html#mbuild_polybuild.aa_monomers.cbma.Cbma.particles_by_element" title="mbuild_polybuild.aa_monomers.cbma.Cbma.particles_by_element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.particles_by_element</span></code></a>(element)</p></td>
+<td><p>Return all Particles of the Compound with a specific element.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.particles_by_name.html#mbuild_polybuild.aa_monomers.cbma.Cbma.particles_by_name" title="mbuild_polybuild.aa_monomers.cbma.Cbma.particles_by_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.particles_by_name</span></code></a>(name)</p></td>
+<td><p>Return all Particles of the Compound with a specific name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.particles_in_range.html#mbuild_polybuild.aa_monomers.cbma.Cbma.particles_in_range" title="mbuild_polybuild.aa_monomers.cbma.Cbma.particles_in_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.particles_in_range</span></code></a>(compound, dmax[, ...])</p></td>
+<td><p>Find particles within a specified range of another particle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.print_hierarchy.html#mbuild_polybuild.aa_monomers.cbma.Cbma.print_hierarchy" title="mbuild_polybuild.aa_monomers.cbma.Cbma.print_hierarchy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.print_hierarchy</span></code></a>([print_full, index, ...])</p></td>
+<td><p>Print the hierarchy of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.referenced_ports.html#mbuild_polybuild.aa_monomers.cbma.Cbma.referenced_ports" title="mbuild_polybuild.aa_monomers.cbma.Cbma.referenced_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.referenced_ports</span></code></a>()</p></td>
+<td><p>Return all Ports referenced by this Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.remove.html#mbuild_polybuild.aa_monomers.cbma.Cbma.remove" title="mbuild_polybuild.aa_monomers.cbma.Cbma.remove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.remove</span></code></a>(objs_to_remove[, reset_labels])</p></td>
+<td><p>Remove children from the Compound cleanly.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.remove_bond.html#mbuild_polybuild.aa_monomers.cbma.Cbma.remove_bond" title="mbuild_polybuild.aa_monomers.cbma.Cbma.remove_bond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.remove_bond</span></code></a>(particle_pair)</p></td>
+<td><p>Delete a bond between a pair of Particles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.reset_labels.html#mbuild_polybuild.aa_monomers.cbma.Cbma.reset_labels" title="mbuild_polybuild.aa_monomers.cbma.Cbma.reset_labels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.reset_labels</span></code></a>()</p></td>
+<td><p>Reset Compound labels so that substituents and ports are renumbered, indexed from port[0] to port[N], where N-1 is the number of ports.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.rotate.html#mbuild_polybuild.aa_monomers.cbma.Cbma.rotate" title="mbuild_polybuild.aa_monomers.cbma.Cbma.rotate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.rotate</span></code></a>(theta, around)</p></td>
+<td><p>Rotate Compound around an arbitrary vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.rotate_dihedral.html#mbuild_polybuild.aa_monomers.cbma.Cbma.rotate_dihedral" title="mbuild_polybuild.aa_monomers.cbma.Cbma.rotate_dihedral"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.rotate_dihedral</span></code></a>(bond, phi)</p></td>
+<td><p>Rotate a dihedral about a central bond.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.save.html#mbuild_polybuild.aa_monomers.cbma.Cbma.save" title="mbuild_polybuild.aa_monomers.cbma.Cbma.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.save</span></code></a>(filename[, include_ports, box, ...])</p></td>
+<td><p>Save the Compound to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.spin.html#mbuild_polybuild.aa_monomers.cbma.Cbma.spin" title="mbuild_polybuild.aa_monomers.cbma.Cbma.spin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.spin</span></code></a>(theta, around[, anchor])</p></td>
+<td><p>Rotate Compound in place around an arbitrary vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.successors.html#mbuild_polybuild.aa_monomers.cbma.Cbma.successors" title="mbuild_polybuild.aa_monomers.cbma.Cbma.successors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.successors</span></code></a>()</p></td>
+<td><p>Yield Compounds below self in the hierarchy.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_freud.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_freud" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_freud"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_freud</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_gmso.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_gmso" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_gmso"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_gmso</span></code></a>(**kwargs)</p></td>
+<td><p>Create a GMSO Topology from a mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_hoomdsnapshot.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_hoomdsnapshot" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_hoomdsnapshot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_hoomdsnapshot</span></code></a>(**kwargs)</p></td>
+<td><p>Create a HOOMD-Blue snapshot from an mBuild Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_intermol.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_intermol" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_intermol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_intermol</span></code></a>([molecule_types])</p></td>
+<td><p>Create an InterMol system from a Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_networkx.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_networkx" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_networkx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_networkx</span></code></a>([names_only])</p></td>
+<td><p>Create a NetworkX graph representing the hierarchy of a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_parmed.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_parmed" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_parmed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_parmed</span></code></a>([box, title, residues, ...])</p></td>
+<td><p>Create a ParmEd Structure from a Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_pybel.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_pybel" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_pybel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_pybel</span></code></a>([box, title, residues, ...])</p></td>
+<td><p>Create a pybel.Molecule from a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_rdkit.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_rdkit" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_rdkit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_rdkit</span></code></a>()</p></td>
+<td><p>Create an RDKit RWMol from an mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_smiles.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_smiles" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_smiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_smiles</span></code></a>([backend])</p></td>
+<td><p>Create a SMILES string from an mbuild compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.to_trajectory.html#mbuild_polybuild.aa_monomers.cbma.Cbma.to_trajectory" title="mbuild_polybuild.aa_monomers.cbma.Cbma.to_trajectory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.to_trajectory</span></code></a>([include_ports, chains, ...])</p></td>
+<td><p>Convert to an md.Trajectory and flatten the compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.translate.html#mbuild_polybuild.aa_monomers.cbma.Cbma.translate" title="mbuild_polybuild.aa_monomers.cbma.Cbma.translate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.translate</span></code></a>(by)</p></td>
+<td><p>Translate the Compound by a vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.translate_to.html#mbuild_polybuild.aa_monomers.cbma.Cbma.translate_to" title="mbuild_polybuild.aa_monomers.cbma.Cbma.translate_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.translate_to</span></code></a>(pos)</p></td>
+<td><p>Translate the Compound to a specific position.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.update_coordinates.html#mbuild_polybuild.aa_monomers.cbma.Cbma.update_coordinates" title="mbuild_polybuild.aa_monomers.cbma.Cbma.update_coordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.update_coordinates</span></code></a>(filename[, ...])</p></td>
+<td><p>Update the coordinates of this Compound from a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.cbma.Cbma.visualize.html#mbuild_polybuild.aa_monomers.cbma.Cbma.visualize" title="mbuild_polybuild.aa_monomers.cbma.Cbma.visualize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cbma.visualize</span></code></a>([show_ports, backend, ...])</p></td>
+<td><p>Visualize the Compound using py3dmol (default) or nglview.</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Cbma</a><ul>
+<li><a class="reference internal" href="#mbuild_polybuild.aa_monomers.cbma.Cbma"><code class="docutils literal notranslate"><span class="pre">Cbma</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_monomers.cbma.html"
+                          title="previous chapter">cbma</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_monomers.cbma.Cbma.box.html"
+                          title="next chapter">mbuild_polybuild.aa_monomers.cbma.Cbma.box</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/mbuild_polybuild.aa_monomers.cbma.Cbma.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.cbma.Cbma.box.html" title="mbuild_polybuild.aa_monomers.cbma.Cbma.box"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.cbma.html" title="cbma"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mbuild_polybuild.aa_monomers.html" >aa_monomers</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="mbuild_polybuild.aa_monomers.cbma.html" >cbma</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Cbma</a></li> 
+      </ul>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright : Works of NIST employees are not not subject to copyright protection in the United States.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+  <!-- Taken from https://www.filamentgroup.com/lab/html-includes/#another-demo%3A-including-another-html-file -->
+  <iframe src="../_static/ntd2d_menu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  </body>
+</html>

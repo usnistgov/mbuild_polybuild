@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftp.TFTP.from\_parmed
+===============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+.. automethod:: TFTP.from_parmed

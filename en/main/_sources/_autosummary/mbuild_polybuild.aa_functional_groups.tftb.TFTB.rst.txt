@@ -1,0 +1,90 @@
+TFTB
+====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftb
+
+mbuild_polybuild.aa_functional_groups.tftb.TFTB
+
+.. autoclass:: TFTB
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         TFTB.box
+         TFTB.center
+         TFTB.charge
+         TFTB.element
+         TFTB.mass
+         TFTB.maxs
+         TFTB.mins
+         TFTB.n_bonds
+         TFTB.n_direct_bonds
+         TFTB.n_particles
+         TFTB.periodicity
+         TFTB.pos
+         TFTB.root
+         TFTB.xyz
+         TFTB.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         TFTB.add
+         TFTB.add_bond
+         TFTB.all_ports
+         TFTB.ancestors
+         TFTB.available_ports
+         TFTB.bonds
+         TFTB.check_for_overlap
+         TFTB.condense
+         TFTB.direct_bonds
+         TFTB.energy_minimize
+         TFTB.flatten
+         TFTB.freud_generate_bonds
+         TFTB.from_gmso
+         TFTB.from_parmed
+         TFTB.from_pybel
+         TFTB.from_trajectory
+         TFTB.generate_bonds
+         TFTB.get_boundingbox
+         TFTB.get_smiles
+         TFTB.is_independent
+         TFTB.min_periodic_distance
+         TFTB.particles
+         TFTB.particles_by_element
+         TFTB.particles_by_name
+         TFTB.particles_in_range
+         TFTB.print_hierarchy
+         TFTB.referenced_ports
+         TFTB.remove
+         TFTB.remove_bond
+         TFTB.reset_labels
+         TFTB.rotate
+         TFTB.rotate_dihedral
+         TFTB.save
+         TFTB.spin
+         TFTB.successors
+         TFTB.to_freud
+         TFTB.to_gmso
+         TFTB.to_hoomdsnapshot
+         TFTB.to_intermol
+         TFTB.to_networkx
+         TFTB.to_parmed
+         TFTB.to_pybel
+         TFTB.to_rdkit
+         TFTB.to_smiles
+         TFTB.to_trajectory
+         TFTB.translate
+         TFTB.translate_to
+         TFTB.update_coordinates
+         TFTB.visualize
+   
+   

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ammonium.Ammonium.maxs
+===============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ammonium
+
+.. autoproperty:: Ammonium.maxs

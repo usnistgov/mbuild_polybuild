@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.sbaa.Sbaa.xyz
+============================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.sbaa
+
+.. autoproperty:: Sbaa.xyz

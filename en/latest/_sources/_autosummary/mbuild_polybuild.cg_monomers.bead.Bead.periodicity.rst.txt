@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.bead.Bead.periodicity
+====================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.bead
+
+.. autoproperty:: Bead.periodicity

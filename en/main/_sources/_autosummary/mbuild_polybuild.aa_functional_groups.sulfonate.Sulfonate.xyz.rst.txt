@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.sulfonate.Sulfonate.xyz
+================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.sulfonate
+
+.. autoproperty:: Sulfonate.xyz

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.methacrylate.Methacrylate.update\_coordinates
+============================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.methacrylate
+
+.. automethod:: Methacrylate.update_coordinates

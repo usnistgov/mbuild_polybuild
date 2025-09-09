@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftb.TFTB.box
+======================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftb
+
+.. autoproperty:: TFTB.box

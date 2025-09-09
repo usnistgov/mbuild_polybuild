@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.betaine.Betaine.energy\_minimize
+===============================================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.betaine
+
+.. automethod:: Betaine.energy_minimize

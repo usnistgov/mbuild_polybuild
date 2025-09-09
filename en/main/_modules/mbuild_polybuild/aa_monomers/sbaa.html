@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mbuild_polybuild.aa_monomers.sbaa &#8212; mBuild Polymer Builder 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/ntd2d.css?v=c867aedc" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    
+    <script src="../../../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJSMY46M5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RJSMY46M5C');
+  </script>
+  <!-- Old DAP UA tag -->
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c">
+  </script>
+
+   
+
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mbuild_polybuild.aa_monomers.sbaa</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for mbuild_polybuild.aa_monomers.sbaa</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Acrylamide moiety.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">mbuild</span> <span class="k">as</span> <span class="nn">mb</span>
+
+<span class="kn">from</span> <span class="nn">mbuild_polybuild.aa_monomers.acrylamide</span> <span class="kn">import</span> <span class="n">Acrylamide</span>
+<span class="kn">from</span> <span class="nn">mbuild_polybuild.aa_functional_groups.ammonium</span> <span class="kn">import</span> <span class="n">Ammonium</span>
+<span class="kn">from</span> <span class="nn">mbuild_polybuild.aa_functional_groups.sulfonate</span> <span class="kn">import</span> <span class="n">Sulfonate</span>
+
+
+<div class="viewcode-block" id="Sbaa">
+<a class="viewcode-back" href="../../../_autosummary/mbuild_polybuild.aa_monomers.sbaa.Sbaa.html#mbuild_polybuild.aa_monomers.sbaa.Sbaa">[docs]</a>
+<span class="k">class</span> <span class="nc">Sbaa</span><span class="p">(</span><span class="n">mb</span><span class="o">.</span><span class="n">Compound</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A sulfobetaine acrylamide monomer.</span>
+
+<span class="sd">    This class uses a custom ester Compound.</span>
+
+<span class="sd">    Ports</span>
+<span class="sd">    -----</span>
+<span class="sd">    - port[3]: Quaternary carbon backbone.</span>
+<span class="sd">    - down: Secondary carbon backbone.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    spacer_backbone : int, optional, default=2</span>
+<span class="sd">        Number of methylene groups between the backbone group and the first ion.</span>
+<span class="sd">    spacer_ion : int, optional, default=2</span>
+<span class="sd">        Number of methylene groups between the backbone group and the second ion.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; from mbuild_polybuild.aa_monomers.sbaa import Sbaa</span>
+<span class="sd">    &gt;&gt;&gt; sbaa = Sbaa(spacer_backbone=3, spacer_ion=2)</span>
+<span class="sd">    &gt;&gt;&gt; sbaa.visualize()</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">spacer_backbone</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">spacer_ion</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">switch_backbone_chiral</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Sbaa</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">spacer_ion</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">spacer_backbone</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Spacer length must be an integer&quot;</span><span class="p">)</span>
+
+        <span class="c1"># Create Moieties</span>
+        <span class="n">acrylamide</span> <span class="o">=</span> <span class="n">Acrylamide</span><span class="p">(</span><span class="n">cap_branch</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">chiral_switch</span><span class="o">=</span><span class="n">switch_backbone_chiral</span><span class="p">)</span>
+        <span class="n">spacer_b</span> <span class="o">=</span> <span class="n">mb</span><span class="o">.</span><span class="n">recipes</span><span class="o">.</span><span class="n">Alkane</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">spacer_backbone</span><span class="p">,</span> <span class="n">cap_front</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cap_end</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">ammonium</span> <span class="o">=</span> <span class="n">Ammonium</span><span class="p">(</span><span class="n">substituents</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">alkane</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="n">spacer_i</span> <span class="o">=</span> <span class="n">mb</span><span class="o">.</span><span class="n">recipes</span><span class="o">.</span><span class="n">Alkane</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">spacer_ion</span><span class="p">,</span> <span class="n">cap_front</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">cap_end</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">sulfonate</span> <span class="o">=</span> <span class="n">Sulfonate</span><span class="p">()</span>
+
+        <span class="c1"># Assemble Pieces</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">acrylamide</span><span class="p">,</span> <span class="s2">&quot;acrylamide&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">spacer_b</span><span class="p">,</span> <span class="s2">&quot;spacer_backbone&quot;</span><span class="p">)</span>
+        <span class="n">mb</span><span class="o">.</span><span class="n">force_overlap</span><span class="p">(</span><span class="n">move_this</span><span class="o">=</span><span class="n">spacer_b</span><span class="p">,</span> <span class="n">from_positions</span><span class="o">=</span><span class="n">spacer_b</span><span class="p">[</span><span class="s2">&quot;up&quot;</span><span class="p">],</span> <span class="n">to_positions</span><span class="o">=</span><span class="n">acrylamide</span><span class="p">[</span><span class="s2">&quot;port[1]&quot;</span><span class="p">])</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">ammonium</span><span class="p">,</span> <span class="s2">&quot;ammonium&quot;</span><span class="p">)</span>
+        <span class="n">mb</span><span class="o">.</span><span class="n">force_overlap</span><span class="p">(</span><span class="n">move_this</span><span class="o">=</span><span class="n">ammonium</span><span class="p">,</span> <span class="n">from_positions</span><span class="o">=</span><span class="n">ammonium</span><span class="p">[</span><span class="s2">&quot;port[2]&quot;</span><span class="p">],</span> <span class="n">to_positions</span><span class="o">=</span><span class="n">spacer_b</span><span class="p">[</span><span class="s2">&quot;down&quot;</span><span class="p">])</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">spacer_i</span><span class="p">,</span> <span class="s2">&quot;spacer_ion&quot;</span><span class="p">)</span>
+        <span class="n">mb</span><span class="o">.</span><span class="n">force_overlap</span><span class="p">(</span><span class="n">move_this</span><span class="o">=</span><span class="n">spacer_i</span><span class="p">,</span> <span class="n">from_positions</span><span class="o">=</span><span class="n">spacer_i</span><span class="p">[</span><span class="s2">&quot;up&quot;</span><span class="p">],</span> <span class="n">to_positions</span><span class="o">=</span><span class="n">ammonium</span><span class="p">[</span><span class="s2">&quot;port[3]&quot;</span><span class="p">])</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">sulfonate</span><span class="p">,</span> <span class="s2">&quot;sulfonate&quot;</span><span class="p">)</span>
+        <span class="n">mb</span><span class="o">.</span><span class="n">force_overlap</span><span class="p">(</span><span class="n">move_this</span><span class="o">=</span><span class="n">sulfonate</span><span class="p">,</span> <span class="n">from_positions</span><span class="o">=</span><span class="n">sulfonate</span><span class="p">[</span><span class="s2">&quot;port[0]&quot;</span><span class="p">],</span> <span class="n">to_positions</span><span class="o">=</span><span class="n">spacer_i</span><span class="p">[</span><span class="s2">&quot;down&quot;</span><span class="p">])</span>
+
+        <span class="c1"># Hoist acrylamide port label to top level.</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="s2">&quot;acrylamide&quot;</span><span class="p">][</span><span class="s2">&quot;down&quot;</span><span class="p">],</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span> <span class="n">containment</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="s2">&quot;acrylamide&quot;</span><span class="p">][</span><span class="s2">&quot;port[3]&quot;</span><span class="p">],</span> <span class="s2">&quot;up&quot;</span><span class="p">,</span> <span class="n">containment</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">Sbaa</span><span class="p">()</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;sbaa.mol2&quot;</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mbuild_polybuild.aa_monomers.sbaa</a></li> 
+      </ul>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright : Works of NIST employees are not not subject to copyright protection in the United States.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+  <!-- Taken from https://www.filamentgroup.com/lab/html-includes/#another-demo%3A-including-another-html-file -->
+  <iframe src="../../../_static/ntd2d_menu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  </body>
+</html>

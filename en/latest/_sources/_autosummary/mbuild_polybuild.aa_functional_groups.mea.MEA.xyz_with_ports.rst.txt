@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mea.MEA.xyz\_with\_ports
+=================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mea
+
+.. autoproperty:: MEA.xyz_with_ports

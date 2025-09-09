@@ -1,0 +1,38 @@
+sulfonate
+=========
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.sulfonate
+
+mbuild_polybuild.aa_functional_groups.sulfonate
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.sulfonate
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Sulfonate
+   
+   
+
+   
+   
+   
+
+
+

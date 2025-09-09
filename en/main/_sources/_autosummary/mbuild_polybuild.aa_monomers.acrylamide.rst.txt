@@ -1,0 +1,38 @@
+acrylamide
+==========
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.acrylamide
+
+mbuild_polybuild.aa_monomers.acrylamide
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_monomers.acrylamide
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Acrylamide
+   
+   
+
+   
+   
+   
+
+
+

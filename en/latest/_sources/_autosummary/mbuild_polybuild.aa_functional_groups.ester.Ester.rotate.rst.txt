@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ester.Ester.rotate
+===========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ester
+
+.. automethod:: Ester.rotate

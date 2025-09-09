@@ -1,0 +1,90 @@
+PTP
+===
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ptp
+
+mbuild_polybuild.aa_functional_groups.ptp.PTP
+
+.. autoclass:: PTP
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         PTP.box
+         PTP.center
+         PTP.charge
+         PTP.element
+         PTP.mass
+         PTP.maxs
+         PTP.mins
+         PTP.n_bonds
+         PTP.n_direct_bonds
+         PTP.n_particles
+         PTP.periodicity
+         PTP.pos
+         PTP.root
+         PTP.xyz
+         PTP.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         PTP.add
+         PTP.add_bond
+         PTP.all_ports
+         PTP.ancestors
+         PTP.available_ports
+         PTP.bonds
+         PTP.check_for_overlap
+         PTP.condense
+         PTP.direct_bonds
+         PTP.energy_minimize
+         PTP.flatten
+         PTP.freud_generate_bonds
+         PTP.from_gmso
+         PTP.from_parmed
+         PTP.from_pybel
+         PTP.from_trajectory
+         PTP.generate_bonds
+         PTP.get_boundingbox
+         PTP.get_smiles
+         PTP.is_independent
+         PTP.min_periodic_distance
+         PTP.particles
+         PTP.particles_by_element
+         PTP.particles_by_name
+         PTP.particles_in_range
+         PTP.print_hierarchy
+         PTP.referenced_ports
+         PTP.remove
+         PTP.remove_bond
+         PTP.reset_labels
+         PTP.rotate
+         PTP.rotate_dihedral
+         PTP.save
+         PTP.spin
+         PTP.successors
+         PTP.to_freud
+         PTP.to_gmso
+         PTP.to_hoomdsnapshot
+         PTP.to_intermol
+         PTP.to_networkx
+         PTP.to_parmed
+         PTP.to_pybel
+         PTP.to_rdkit
+         PTP.to_smiles
+         PTP.to_trajectory
+         PTP.translate
+         PTP.translate_to
+         PTP.update_coordinates
+         PTP.visualize
+   
+   

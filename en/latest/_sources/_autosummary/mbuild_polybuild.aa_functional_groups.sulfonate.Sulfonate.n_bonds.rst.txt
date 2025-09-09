@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.sulfonate.Sulfonate.n\_bonds
+=====================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.sulfonate
+
+.. autoproperty:: Sulfonate.n_bonds

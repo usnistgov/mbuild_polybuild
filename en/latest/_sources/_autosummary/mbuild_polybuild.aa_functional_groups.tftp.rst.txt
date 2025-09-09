@@ -1,0 +1,38 @@
+tftp
+====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+mbuild_polybuild.aa_functional_groups.tftp
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      TFTP
+   
+   
+
+   
+   
+   
+
+
+

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>aa_functional_groups &#8212; mBuild Polymer Builder 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/ntd2d.css?v=c867aedc" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    
+    <script src="../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="amide" href="mbuild_polybuild.aa_functional_groups.amide.html" />
+    <link rel="prev" title="mbuild_polybuild.aa_fragments.c_quaternary.C.visualize" href="mbuild_polybuild.aa_fragments.c_quaternary.C.visualize.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJSMY46M5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RJSMY46M5C');
+  </script>
+  <!-- Old DAP UA tag -->
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c">
+  </script>
+
+   
+
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_functional_groups.amide.html" title="amide"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_fragments.c_quaternary.C.visualize.html" title="mbuild_polybuild.aa_fragments.c_quaternary.C.visualize"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" accesskey="U">API Reference</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aa_functional_groups</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="aa-functional-groups">
+<h1>aa_functional_groups<a class="headerlink" href="#aa-functional-groups" title="Link to this heading">¶</a></h1>
+<p>mbuild_polybuild.aa_functional_groups</p>
+<p class="rubric">Description</p>
+<p id="module-mbuild_polybuild.aa_functional_groups">This module provides all-atom functional groups.</p>
+<p>These functional groups can be used to build complex molecular systems by
+combining them with other components. Each functional group is represented
+as a class that inherits from <cite>mb.Compound</cite>.</p>
+<section id="available-functional-groups">
+<h2>Available Functional Groups<a class="headerlink" href="#available-functional-groups" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><cite>Amide</cite>: An amide group (-C(=O)N(H)-).</p></li>
+<li><p><cite>Ammonium</cite>: An ammonium group.</p></li>
+<li><p><cite>Ester</cite>: An ester group (-C(=O)O-).</p></li>
+<li><p><cite>MEA</cite>: A monoethanolamine group.</p></li>
+<li><p><cite>MHTA</cite>: A methylhydroxypropylthioacetate group.</p></li>
+<li><p><cite>MPTB</cite>: A methoxyphenylthiobutanol group.</p></li>
+<li><p><cite>PTP</cite>: A pyridinylthiopropanol group.</p></li>
+<li><p><cite>Phenyl</cite>: A phenyl group.</p></li>
+<li><p><cite>Sulfonate</cite>: A sulfonate group (-S(=O)2O-).</p></li>
+<li><p><cite>TFTB</cite>: A trifluoroethylthiobutanol group.</p></li>
+<li><p><cite>TFTP</cite>: A tridecafluorooctylthiopropanol group.</p></li>
+<li><p><cite>TMSTB</cite>: A trimethylsilylpropylthiobutanol group.</p></li>
+</ul>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mbuild_polybuild.aa_functional_groups</span> <span class="kn">import</span> <span class="n">MHTA</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mhta</span> <span class="o">=</span> <span class="n">MHTA</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mhta</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;methylhydroxypropylthioacetate.mol2&quot;</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.amide.html#module-mbuild_polybuild.aa_functional_groups.amide" title="mbuild_polybuild.aa_functional_groups.amide"><code class="xref py py-obj docutils literal notranslate"><span class="pre">amide</span></code></a></p></td>
+<td><p>Amide moiety.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.ammonium.html#module-mbuild_polybuild.aa_functional_groups.ammonium" title="mbuild_polybuild.aa_functional_groups.ammonium"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ammonium</span></code></a></p></td>
+<td><p>Ammonium moiety.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.ester.html#module-mbuild_polybuild.aa_functional_groups.ester" title="mbuild_polybuild.aa_functional_groups.ester"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ester</span></code></a></p></td>
+<td><p>Ester moiety.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.mea.html#module-mbuild_polybuild.aa_functional_groups.mea" title="mbuild_polybuild.aa_functional_groups.mea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mea</span></code></a></p></td>
+<td><p>Monoethanolamine (MEA) moiety.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.mhta.html#module-mbuild_polybuild.aa_functional_groups.mhta" title="mbuild_polybuild.aa_functional_groups.mhta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mhta</span></code></a></p></td>
+<td><p>Methylhydroxypropylthioacetate (MHTA) moiety.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.mptb.html#module-mbuild_polybuild.aa_functional_groups.mptb" title="mbuild_polybuild.aa_functional_groups.mptb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mptb</span></code></a></p></td>
+<td><p>Methoxyphenylthiobutanol (MPTB) moiety.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.phenyl.html#module-mbuild_polybuild.aa_functional_groups.phenyl" title="mbuild_polybuild.aa_functional_groups.phenyl"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phenyl</span></code></a></p></td>
+<td><p>Phenyl moiety.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.ptp.html#module-mbuild_polybuild.aa_functional_groups.ptp" title="mbuild_polybuild.aa_functional_groups.ptp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ptp</span></code></a></p></td>
+<td><p>Pyridinylthiopropanol (PTP) moiety.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.sulfonate.html#module-mbuild_polybuild.aa_functional_groups.sulfonate" title="mbuild_polybuild.aa_functional_groups.sulfonate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sulfonate</span></code></a></p></td>
+<td><p>Sulfonate moiety.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tftb.html#module-mbuild_polybuild.aa_functional_groups.tftb" title="mbuild_polybuild.aa_functional_groups.tftb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tftb</span></code></a></p></td>
+<td><p>Trifluoroethylthiobutanol (TFTB) moiety.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tftp.html#module-mbuild_polybuild.aa_functional_groups.tftp" title="mbuild_polybuild.aa_functional_groups.tftp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tftp</span></code></a></p></td>
+<td><p>Tridecafluorooctylthiopropanol (TFTP) moiety.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_functional_groups.tmstb.html#module-mbuild_polybuild.aa_functional_groups.tmstb" title="mbuild_polybuild.aa_functional_groups.tmstb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tmstb</span></code></a></p></td>
+<td><p>Trimethylsilylpropylthiobutanol (TMSTB) moiety.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">aa_functional_groups</a><ul>
+<li><a class="reference internal" href="#available-functional-groups">Available Functional Groups</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_fragments.c_quaternary.C.visualize.html"
+                          title="previous chapter">mbuild_polybuild.aa_fragments.c_quaternary.C.visualize</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_functional_groups.amide.html"
+                          title="next chapter">amide</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/mbuild_polybuild.aa_functional_groups.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_functional_groups.amide.html" title="amide"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_fragments.c_quaternary.C.visualize.html" title="mbuild_polybuild.aa_fragments.c_quaternary.C.visualize"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">aa_functional_groups</a></li> 
+      </ul>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright : Works of NIST employees are not not subject to copyright protection in the United States.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+  <!-- Taken from https://www.filamentgroup.com/lab/html-includes/#another-demo%3A-including-another-html-file -->
+  <iframe src="../_static/ntd2d_menu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  </body>
+</html>

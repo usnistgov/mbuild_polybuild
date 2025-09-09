@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mea.MEA.energy\_minimize
+=================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mea
+
+.. automethod:: MEA.energy_minimize

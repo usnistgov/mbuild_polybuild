@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.ammonium.Ammonium.all\_ports
+=====================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.ammonium
+
+.. automethod:: Ammonium.all_ports

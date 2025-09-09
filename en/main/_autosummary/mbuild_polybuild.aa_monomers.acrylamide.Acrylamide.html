@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Acrylamide &#8212; mBuild Polymer Builder 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/ntd2d.css?v=c867aedc" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    
+    <script src="../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box.html" />
+    <link rel="prev" title="acrylamide" href="mbuild_polybuild.aa_monomers.acrylamide.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJSMY46M5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RJSMY46M5C');
+  </script>
+  <!-- Old DAP UA tag -->
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c">
+  </script>
+
+   
+
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box.html" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.acrylamide.html" title="acrylamide"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mbuild_polybuild.aa_monomers.html" >aa_monomers</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="mbuild_polybuild.aa_monomers.acrylamide.html" accesskey="U">acrylamide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Acrylamide</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="acrylamide">
+<h1>Acrylamide<a class="headerlink" href="#acrylamide" title="Link to this heading">¶</a></h1>
+<p>mbuild_polybuild.aa_monomers.acrylamide.Acrylamide</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">mbuild_polybuild.aa_monomers.acrylamide.</span></span><span class="sig-name descname"><span class="pre">Acrylamide</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functional_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">port_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cap_branch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cap_ternary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cap_primary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chiral_switch</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/mbuild_polybuild/aa_monomers/acrylamide.html#Acrylamide"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Compound</span></code></p>
+<p>An acrylamide monomer.</p>
+<p>This class uses a custom amide Compound.</p>
+<section id="ports">
+<h2>Ports<a class="headerlink" href="#ports" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>port[3]: Ternary carbon backbone.</p></li>
+<li><p>down: Secondary carbon backbone.</p></li>
+<li><p>port[1]: Amide group.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>functional_group</strong> (<em>mb.Compound, optional</em>) – Add a custom functional group to connect to the amide, completing a monomer.</p></li>
+<li><p><strong>port_name</strong> (<em>str, optional</em>) – If more than one port is found on the functional_group, define the target port label here.</p></li>
+<li><p><strong>cap_branch</strong> (<em>bool, optional, default=True</em>) – Choose whether to cap the amide group with a hydrogen.</p></li>
+<li><p><strong>cap_ternary</strong> (<em>bool, optional, default=False</em>) – Choose whether to cap what would be a ternary carbon as a secondary group.</p></li>
+<li><p><strong>cap_primary</strong> (<em>bool, optional, default=False</em>) – Choose whether to cap what would be a secondary carbon as a primary carbon.</p></li>
+<li><p><strong>chiral_switch</strong> (<em>bool, optional, default=False</em>) – When this is true, the hydrogen group and amide group switch places.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">mbuild_polybuild.aa_monomers.acrylamide</span> <span class="kn">import</span> <span class="n">Acrylamide</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acrylamide</span> <span class="o">=</span> <span class="n">Acrylamide</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acrylamide</span><span class="o">.</span><span class="n">visualize</span><span class="p">()</span>
+</pre></div>
+</div>
+<blockquote>
+<div><table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.box</span></code></a></p></td>
+<td><p>Get the box of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.center.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.center" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.center"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.center</span></code></a></p></td>
+<td><p>Get the cartesian center of the Compound based on its Particles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.charge.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.charge" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.charge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.charge</span></code></a></p></td>
+<td><p>Return the total charge of a compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.element.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.element" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.element</span></code></a></p></td>
+<td><p>Get the element of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.mass.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.mass" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.mass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.mass</span></code></a></p></td>
+<td><p>Return the total mass of a compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.maxs.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.maxs" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.maxs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.maxs</span></code></a></p></td>
+<td><p>Return the maximum x, y, z coordinate of any particle in this compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.mins.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.mins" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.mins"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.mins</span></code></a></p></td>
+<td><p>Return the mimimum x, y, z coordinate of any particle in this compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_bonds.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_bonds" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.n_bonds</span></code></a></p></td>
+<td><p>Return the total number of bonds in the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_direct_bonds.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_direct_bonds" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_direct_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.n_direct_bonds</span></code></a></p></td>
+<td><p>Return the number of bonds a particle is directly involved in.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_particles.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_particles" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.n_particles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.n_particles</span></code></a></p></td>
+<td><p>Return the number of Particles in the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.periodicity.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.periodicity" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.periodicity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.periodicity</span></code></a></p></td>
+<td><p>Get the periodicity of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.pos.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.pos" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.pos"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.pos</span></code></a></p></td>
+<td><p>Get the position of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.root.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.root" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.root"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.root</span></code></a></p></td>
+<td><p>Get the Compound at the top of self's hierarchy.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.xyz.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.xyz" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.xyz"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.xyz</span></code></a></p></td>
+<td><p>Return all particle coordinates in this compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.xyz_with_ports.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.xyz_with_ports" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.xyz_with_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.xyz_with_ports</span></code></a></p></td>
+<td><p>Return all particle coordinates in this compound including ports.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.add.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.add" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.add"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.add</span></code></a>(new_child[, label, ...])</p></td>
+<td><p>Add a part to the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.add_bond.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.add_bond" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.add_bond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.add_bond</span></code></a>(particle_pair[, bond_order])</p></td>
+<td><p>Add a bond between two Particles.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.all_ports.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.all_ports" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.all_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.all_ports</span></code></a>()</p></td>
+<td><p>Return all Ports referenced by this Compound and its successors.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.ancestors.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.ancestors" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.ancestors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.ancestors</span></code></a>()</p></td>
+<td><p>Generate all ancestors of the Compound recursively.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.available_ports.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.available_ports" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.available_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.available_ports</span></code></a>()</p></td>
+<td><p>Return all unoccupied Ports referenced by this Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.bonds.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.bonds" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.bonds</span></code></a>([return_bond_order])</p></td>
+<td><p>Return all bonds in the Compound and sub-Compounds.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.check_for_overlap.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.check_for_overlap" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.check_for_overlap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.check_for_overlap</span></code></a>(excluded_bond_depth)</p></td>
+<td><p>Check if a compound contains overlapping particles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.condense.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.condense" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.condense"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.condense</span></code></a>([inplace])</p></td>
+<td><p>Condense the hierarchical structure of the Compound to the level of molecules.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.direct_bonds.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.direct_bonds" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.direct_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.direct_bonds</span></code></a>([graph_depth])</p></td>
+<td><p>Return a list of particles that this particle bonds to.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.energy_minimize.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.energy_minimize" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.energy_minimize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.energy_minimize</span></code></a>([forcefield, ...])</p></td>
+<td><p>Perform an energy minimization on a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.flatten.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.flatten" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.flatten"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.flatten</span></code></a>([inplace])</p></td>
+<td><p>Flatten the hierarchical structure of the Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.freud_generate_bonds.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.freud_generate_bonds" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.freud_generate_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.freud_generate_bonds</span></code></a>(name_a, ...)</p></td>
+<td><p>Add Bonds between all pairs of types a/b within [dmin, dmax].</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_gmso.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_gmso" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_gmso"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.from_gmso</span></code></a>(topology[, ...])</p></td>
+<td><p>Convert a GMSO Topology to mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_parmed.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_parmed" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_parmed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.from_parmed</span></code></a>(structure[, ...])</p></td>
+<td><p>Extract atoms and bonds from a pmd.Structure.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_pybel.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_pybel" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_pybel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.from_pybel</span></code></a>(pybel_mol[, ...])</p></td>
+<td><p>Create a Compound from a Pybel.Molecule.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_trajectory.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_trajectory" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.from_trajectory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.from_trajectory</span></code></a>(traj[, frame, ...])</p></td>
+<td><p>Extract atoms and bonds from a md.Trajectory.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.generate_bonds.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.generate_bonds" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.generate_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.generate_bonds</span></code></a>(name_a, name_b, ...)</p></td>
+<td><p>Add Bonds between all pairs of types a/b within [dmin, dmax].</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.get_boundingbox.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.get_boundingbox" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.get_boundingbox"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.get_boundingbox</span></code></a>([pad_box])</p></td>
+<td><p>Compute the bounding box of the compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.get_smiles.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.get_smiles" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.get_smiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.get_smiles</span></code></a>()</p></td>
+<td><p>Get SMILES string for compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.is_independent.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.is_independent" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.is_independent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.is_independent</span></code></a>()</p></td>
+<td><p>Return True if there is no bond between particles of the Compound to an external Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.min_periodic_distance.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.min_periodic_distance" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.min_periodic_distance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.min_periodic_distance</span></code></a>(xyz0, xyz1)</p></td>
+<td><p>Vectorized distance calculation considering minimum image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.particles</span></code></a>([include_ports])</p></td>
+<td><p>Return all Particles of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_by_element.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_by_element" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_by_element"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.particles_by_element</span></code></a>(element)</p></td>
+<td><p>Return all Particles of the Compound with a specific element.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_by_name.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_by_name" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_by_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.particles_by_name</span></code></a>(name)</p></td>
+<td><p>Return all Particles of the Compound with a specific name.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_in_range.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_in_range" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.particles_in_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.particles_in_range</span></code></a>(compound, dmax)</p></td>
+<td><p>Find particles within a specified range of another particle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.print_hierarchy.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.print_hierarchy" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.print_hierarchy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.print_hierarchy</span></code></a>([print_full, ...])</p></td>
+<td><p>Print the hierarchy of the Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.referenced_ports.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.referenced_ports" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.referenced_ports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.referenced_ports</span></code></a>()</p></td>
+<td><p>Return all Ports referenced by this Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.remove.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.remove" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.remove"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.remove</span></code></a>(objs_to_remove[, reset_labels])</p></td>
+<td><p>Remove children from the Compound cleanly.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.remove_bond.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.remove_bond" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.remove_bond"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.remove_bond</span></code></a>(particle_pair)</p></td>
+<td><p>Delete a bond between a pair of Particles.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.reset_labels.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.reset_labels" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.reset_labels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.reset_labels</span></code></a>()</p></td>
+<td><p>Reset Compound labels so that substituents and ports are renumbered, indexed from port[0] to port[N], where N-1 is the number of ports.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.rotate.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.rotate" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.rotate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.rotate</span></code></a>(theta, around)</p></td>
+<td><p>Rotate Compound around an arbitrary vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.rotate_dihedral.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.rotate_dihedral" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.rotate_dihedral"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.rotate_dihedral</span></code></a>(bond, phi)</p></td>
+<td><p>Rotate a dihedral about a central bond.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.save.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.save" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.save</span></code></a>(filename[, include_ports, ...])</p></td>
+<td><p>Save the Compound to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.spin.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.spin" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.spin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.spin</span></code></a>(theta, around[, anchor])</p></td>
+<td><p>Rotate Compound in place around an arbitrary vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.successors.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.successors" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.successors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.successors</span></code></a>()</p></td>
+<td><p>Yield Compounds below self in the hierarchy.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_freud.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_freud" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_freud"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_freud</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_gmso.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_gmso" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_gmso"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_gmso</span></code></a>(**kwargs)</p></td>
+<td><p>Create a GMSO Topology from a mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_hoomdsnapshot.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_hoomdsnapshot" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_hoomdsnapshot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_hoomdsnapshot</span></code></a>(**kwargs)</p></td>
+<td><p>Create a HOOMD-Blue snapshot from an mBuild Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_intermol.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_intermol" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_intermol"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_intermol</span></code></a>([molecule_types])</p></td>
+<td><p>Create an InterMol system from a Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_networkx.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_networkx" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_networkx"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_networkx</span></code></a>([names_only])</p></td>
+<td><p>Create a NetworkX graph representing the hierarchy of a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_parmed.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_parmed" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_parmed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_parmed</span></code></a>([box, title, residues, ...])</p></td>
+<td><p>Create a ParmEd Structure from a Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_pybel.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_pybel" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_pybel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_pybel</span></code></a>([box, title, residues, ...])</p></td>
+<td><p>Create a pybel.Molecule from a Compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_rdkit.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_rdkit" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_rdkit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_rdkit</span></code></a>()</p></td>
+<td><p>Create an RDKit RWMol from an mBuild Compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_smiles.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_smiles" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_smiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_smiles</span></code></a>([backend])</p></td>
+<td><p>Create a SMILES string from an mbuild compound.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_trajectory.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_trajectory" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.to_trajectory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.to_trajectory</span></code></a>([include_ports, ...])</p></td>
+<td><p>Convert to an md.Trajectory and flatten the compound.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.translate.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.translate" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.translate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.translate</span></code></a>(by)</p></td>
+<td><p>Translate the Compound by a vector.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.translate_to.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.translate_to" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.translate_to"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.translate_to</span></code></a>(pos)</p></td>
+<td><p>Translate the Compound to a specific position.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.update_coordinates.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.update_coordinates" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.update_coordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.update_coordinates</span></code></a>(filename[, ...])</p></td>
+<td><p>Update the coordinates of this Compound from a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.visualize.html#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.visualize" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.visualize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Acrylamide.visualize</span></code></a>([show_ports, backend, ...])</p></td>
+<td><p>Visualize the Compound using py3dmol (default) or nglview.</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Acrylamide</a><ul>
+<li><a class="reference internal" href="#mbuild_polybuild.aa_monomers.acrylamide.Acrylamide"><code class="docutils literal notranslate"><span class="pre">Acrylamide</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_monomers.acrylamide.html"
+                          title="previous chapter">acrylamide</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box.html"
+                          title="next chapter">mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_autosummary/mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box.html" title="mbuild_polybuild.aa_monomers.acrylamide.Acrylamide.box"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="mbuild_polybuild.aa_monomers.acrylamide.html" title="acrylamide"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../api.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="mbuild_polybuild.aa_monomers.html" >aa_monomers</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="mbuild_polybuild.aa_monomers.acrylamide.html" >acrylamide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Acrylamide</a></li> 
+      </ul>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright : Works of NIST employees are not not subject to copyright protection in the United States.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+  <!-- Taken from https://www.filamentgroup.com/lab/html-includes/#another-demo%3A-including-another-html-file -->
+  <iframe src="../_static/ntd2d_menu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  </body>
+</html>

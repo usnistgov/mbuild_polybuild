@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.ethylene.Ethylene.add
+====================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.ethylene
+
+.. automethod:: Ethylene.add

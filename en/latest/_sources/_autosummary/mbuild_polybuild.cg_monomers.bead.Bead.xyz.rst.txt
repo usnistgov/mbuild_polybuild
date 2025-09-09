@@ -1,0 +1,6 @@
+mbuild\_polybuild.cg\_monomers.bead.Bead.xyz
+============================================
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.bead
+
+.. autoproperty:: Bead.xyz

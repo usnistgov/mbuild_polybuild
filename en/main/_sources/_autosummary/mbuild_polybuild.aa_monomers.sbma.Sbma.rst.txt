@@ -1,0 +1,90 @@
+Sbma
+====
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.sbma
+
+mbuild_polybuild.aa_monomers.sbma.Sbma
+
+.. autoclass:: Sbma
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         Sbma.box
+         Sbma.center
+         Sbma.charge
+         Sbma.element
+         Sbma.mass
+         Sbma.maxs
+         Sbma.mins
+         Sbma.n_bonds
+         Sbma.n_direct_bonds
+         Sbma.n_particles
+         Sbma.periodicity
+         Sbma.pos
+         Sbma.root
+         Sbma.xyz
+         Sbma.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         Sbma.add
+         Sbma.add_bond
+         Sbma.all_ports
+         Sbma.ancestors
+         Sbma.available_ports
+         Sbma.bonds
+         Sbma.check_for_overlap
+         Sbma.condense
+         Sbma.direct_bonds
+         Sbma.energy_minimize
+         Sbma.flatten
+         Sbma.freud_generate_bonds
+         Sbma.from_gmso
+         Sbma.from_parmed
+         Sbma.from_pybel
+         Sbma.from_trajectory
+         Sbma.generate_bonds
+         Sbma.get_boundingbox
+         Sbma.get_smiles
+         Sbma.is_independent
+         Sbma.min_periodic_distance
+         Sbma.particles
+         Sbma.particles_by_element
+         Sbma.particles_by_name
+         Sbma.particles_in_range
+         Sbma.print_hierarchy
+         Sbma.referenced_ports
+         Sbma.remove
+         Sbma.remove_bond
+         Sbma.reset_labels
+         Sbma.rotate
+         Sbma.rotate_dihedral
+         Sbma.save
+         Sbma.spin
+         Sbma.successors
+         Sbma.to_freud
+         Sbma.to_gmso
+         Sbma.to_hoomdsnapshot
+         Sbma.to_intermol
+         Sbma.to_networkx
+         Sbma.to_parmed
+         Sbma.to_pybel
+         Sbma.to_rdkit
+         Sbma.to_smiles
+         Sbma.to_trajectory
+         Sbma.translate
+         Sbma.translate_to
+         Sbma.update_coordinates
+         Sbma.visualize
+   
+   

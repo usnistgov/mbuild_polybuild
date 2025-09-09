@@ -1,0 +1,90 @@
+Amide
+=====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.amide
+
+mbuild_polybuild.aa_functional_groups.amide.Amide
+
+.. autoclass:: Amide
+   :members:
+   :show-inheritance:
+
+   
+   
+   
+      .. autosummary::
+         :toctree:
+      
+         Amide.box
+         Amide.center
+         Amide.charge
+         Amide.element
+         Amide.mass
+         Amide.maxs
+         Amide.mins
+         Amide.n_bonds
+         Amide.n_direct_bonds
+         Amide.n_particles
+         Amide.periodicity
+         Amide.pos
+         Amide.root
+         Amide.xyz
+         Amide.xyz_with_ports
+   
+   
+
+   
+      .. autosummary::
+         :toctree:
+      
+         Amide.add
+         Amide.add_bond
+         Amide.all_ports
+         Amide.ancestors
+         Amide.available_ports
+         Amide.bonds
+         Amide.check_for_overlap
+         Amide.condense
+         Amide.direct_bonds
+         Amide.energy_minimize
+         Amide.flatten
+         Amide.freud_generate_bonds
+         Amide.from_gmso
+         Amide.from_parmed
+         Amide.from_pybel
+         Amide.from_trajectory
+         Amide.generate_bonds
+         Amide.get_boundingbox
+         Amide.get_smiles
+         Amide.is_independent
+         Amide.min_periodic_distance
+         Amide.particles
+         Amide.particles_by_element
+         Amide.particles_by_name
+         Amide.particles_in_range
+         Amide.print_hierarchy
+         Amide.referenced_ports
+         Amide.remove
+         Amide.remove_bond
+         Amide.reset_labels
+         Amide.rotate
+         Amide.rotate_dihedral
+         Amide.save
+         Amide.spin
+         Amide.successors
+         Amide.to_freud
+         Amide.to_gmso
+         Amide.to_hoomdsnapshot
+         Amide.to_intermol
+         Amide.to_networkx
+         Amide.to_parmed
+         Amide.to_pybel
+         Amide.to_rdkit
+         Amide.to_smiles
+         Amide.to_trajectory
+         Amide.translate
+         Amide.translate_to
+         Amide.update_coordinates
+         Amide.visualize
+   
+   

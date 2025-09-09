@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.phenyl.Phenyl.to\_gmso
+===============================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.phenyl
+
+.. automethod:: Phenyl.to_gmso

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mbuild_polybuild.toolbox &#8212; mBuild Polymer Builder 0.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/ntd2d.css?v=c867aedc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    
+    <script src="../../_static/documentation_options.js?v=7026087e"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJSMY46M5C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RJSMY46M5C');
+  </script>
+  <!-- Old DAP UA tag -->
+  <script async type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NIST&subagency=github&pua=UA-66610693-1&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c">
+  </script>
+
+   
+
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mbuild_polybuild.toolbox</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for mbuild_polybuild.toolbox</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Toolbox Module</span>
+
+<span class="sd">This module contains helper functions for forming molecules, generating sequences, and applying forcefield parameters.</span>
+
+<span class="sd">Functions</span>
+<span class="sd">---------</span>
+<span class="sd">- _import_pdb: Retrieve the file path of a PDB file distributed with mbuild-polybuild.</span>
+<span class="sd">- atom2port: Replace specific atom types with ports in a given trajectory.</span>
+<span class="sd">- random_sequence: Generate a random copolymer sequence.</span>
+<span class="sd">- apply_nbfix: Apply non-bonded interaction fixes to a structure using parameters from a file.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+
+<span class="kn">import</span> <span class="nn">mbuild</span> <span class="k">as</span> <span class="nn">mb</span>
+<span class="kn">from</span> <span class="nn">foyer.utils.nbfixes</span> <span class="kn">import</span> <span class="n">apply_nbfix</span> <span class="k">as</span> <span class="n">foyer_apply_nbfix</span>
+
+<span class="kn">import</span> <span class="nn">mbuild_polybuild</span>
+
+
+<span class="k">def</span> <span class="nf">_import_pdb</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieve the file path of a PDB file distributed with mbuild-polybuild.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    filename : str</span>
+<span class="sd">        Filename of the desired molecular structure.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    str</span>
+<span class="sd">        Full file path to the PDB file.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; path = _import_pdb(&quot;amide.pdb&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; print(path)</span>
+<span class="sd">    &quot;/path/to/_pdb_files/amide.pdb&quot;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mbuild_polybuild</span><span class="o">.</span><span class="vm">__file__</span><span class="p">[:</span><span class="o">-</span><span class="mi">12</span><span class="p">],</span> <span class="s2">&quot;_pdb_files&quot;</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="atom2port">
+<a class="viewcode-back" href="../../_autosummary/mbuild_polybuild.toolbox.atom2port.html#mbuild_polybuild.toolbox.atom2port">[docs]</a>
+<span class="k">def</span> <span class="nf">atom2port</span><span class="p">(</span><span class="n">Obj</span><span class="p">,</span> <span class="n">atom_type</span><span class="o">=</span><span class="s2">&quot;NO&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Replace specific atom types with ports in the given trajectory.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    Obj : mb.Compound</span>
+<span class="sd">        The compound instance for which to create ports.</span>
+<span class="sd">    atom_type : str, optional, default=&quot;NO&quot;</span>
+<span class="sd">        Atom type to be replaced with a port. Comparison is case-insensitive.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; from mbuild import Compound</span>
+<span class="sd">    &gt;&gt;&gt; compound = Compound()</span>
+<span class="sd">    &gt;&gt;&gt; atom2port(compound, atom_type=&quot;H&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">atom_type</span> <span class="o">=</span> <span class="n">atom_type</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="c1"># Remove unwanted bond to produce ports</span>
+    <span class="n">flag_found</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">for</span> <span class="n">bond</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">Obj</span><span class="o">.</span><span class="n">bonds</span><span class="p">()):</span>
+        <span class="n">flag</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="k">for</span> <span class="n">tmp</span> <span class="ow">in</span> <span class="n">bond</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">tmp</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">atom_type</span><span class="p">:</span>
+                <span class="n">flag</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">flag</span><span class="p">:</span>
+            <span class="n">flag_found</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">Obj</span><span class="o">.</span><span class="n">remove_bond</span><span class="p">(</span><span class="n">bond</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">flag_found</span><span class="p">:</span>
+        <span class="c1"># Remove unwanted ports and atoms</span>
+        <span class="n">remove_array</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">Obj</span><span class="o">.</span><span class="n">children</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">mb</span><span class="o">.</span><span class="n">port</span><span class="o">.</span><span class="n">Port</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">anchor</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">atom_type</span><span class="p">:</span>
+                    <span class="n">remove_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">pass</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">child</span><span class="o">.</span><span class="n">name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">atom_type</span><span class="p">:</span>
+                    <span class="n">remove_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+        <span class="n">Obj</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span>
+            <span class="n">remove_array</span><span class="p">,</span>
+            <span class="c1"># reset_labels=True</span>
+        <span class="p">)</span>
+        <span class="n">new_labels</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">Obj</span><span class="o">.</span><span class="n">children</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s2">&quot;Port&quot;</span> <span class="ow">in</span> <span class="n">child</span><span class="o">.</span><span class="n">name</span><span class="p">:</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="p">[</span><span class="n">key</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">Obj</span><span class="o">.</span><span class="n">labels</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="nb">id</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">==</span> <span class="nb">id</span><span class="p">(</span><span class="n">child</span><span class="p">)][</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">if</span> <span class="s2">&quot;port&quot;</span> <span class="ow">in</span> <span class="n">label</span><span class="p">:</span>
+                    <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">[$]&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;port&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">[$]&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">child</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">label</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;[$]&quot;</span><span class="p">):</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="n">label</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">label</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">new_labels</span><span class="p">:</span>
+                    <span class="n">new_labels</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+                <span class="n">label_pattern</span> <span class="o">=</span> <span class="n">label</span> <span class="o">+</span> <span class="s2">&quot;[</span><span class="si">{}</span><span class="s2">]&quot;</span>
+
+                <span class="n">count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">new_labels</span><span class="p">[</span><span class="n">label</span><span class="p">])</span>
+                <span class="n">new_labels</span><span class="p">[</span><span class="n">label</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+                <span class="n">label</span> <span class="o">=</span> <span class="n">label_pattern</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+            <span class="n">new_labels</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="n">child</span>
+        <span class="n">Obj</span><span class="o">.</span><span class="n">labels</span> <span class="o">=</span> <span class="n">new_labels</span></div>
+
+
+
+<div class="viewcode-block" id="random_sequence">
+<a class="viewcode-back" href="../../_autosummary/mbuild_polybuild.toolbox.random_sequence.html#mbuild_polybuild.toolbox.random_sequence">[docs]</a>
+<span class="k">def</span> <span class="nf">random_sequence</span><span class="p">(</span><span class="n">Ncopolymers</span><span class="p">,</span> <span class="n">Nmonomers</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generate a random copolymer sequence.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    Ncopolymers : int</span>
+<span class="sd">        Number of distinct copolymers.</span>
+<span class="sd">    Nmonomers : int</span>
+<span class="sd">        Number of monomers in the chain.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    str</span>
+<span class="sd">        A string representing the random copolymer sequence.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; sequence = random_sequence(3, 10)</span>
+<span class="sd">    &gt;&gt;&gt; print(sequence)</span>
+<span class="sd">    &quot;ABACABCBAC&quot;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">copolymer_options</span> <span class="o">=</span> <span class="s2">&quot;ABCDEFGHIJK&quot;</span>
+    <span class="n">cut_off</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">Ncopolymers</span>
+
+    <span class="n">Rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">()</span>
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">Rng</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="n">Nmonomers</span><span class="p">,))</span>
+    <span class="n">sequence_numbers</span> <span class="o">=</span> <span class="n">tmp</span> <span class="o">//</span> <span class="n">cut_off</span>
+    <span class="n">sequence_letters</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">copolymer_options</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sequence_numbers</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">sequence_letters</span></div>
+
+
+
+<div class="viewcode-block" id="apply_nbfix">
+<a class="viewcode-back" href="../../_autosummary/mbuild_polybuild.toolbox.apply_nbfix.html#mbuild_polybuild.toolbox.apply_nbfix">[docs]</a>
+<span class="k">def</span> <span class="nf">apply_nbfix</span><span class="p">(</span><span class="n">structure</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">filetype</span><span class="o">=</span><span class="s2">&quot;json&quot;</span><span class="p">,</span> <span class="n">units</span><span class="o">=</span><span class="s2">&quot;real&quot;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Apply non-bonded interaction fixes to a structure using parameters from a file.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    structure : mb.Compound</span>
+<span class="sd">        The structure object with a forcefield already applied.</span>
+<span class="sd">    filename : str</span>
+<span class="sd">        Name of the file containing parameters.</span>
+<span class="sd">    filetype : str, optional, default=&quot;json&quot;</span>
+<span class="sd">        File type to import (e.g., &quot;json&quot;).</span>
+<span class="sd">    units : str, optional, default=&quot;real&quot;</span>
+<span class="sd">        Unit system for parameters. &quot;real&quot; converts between kcal/mol and angstroms.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    mb.Compound</span>
+<span class="sd">        The input structure with updated parameters.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; from mbuild import Compound</span>
+<span class="sd">    &gt;&gt;&gt; structure = Compound()</span>
+<span class="sd">    &gt;&gt;&gt; updated_structure = apply_nbfix(structure, &quot;params.json&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">units</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">units</span> <span class="o">==</span> <span class="s2">&quot;lj&quot;</span><span class="p">:</span>
+        <span class="n">convert_epsilon</span> <span class="o">=</span> <span class="mf">1.0</span>
+        <span class="n">convert_sigma</span> <span class="o">=</span> <span class="mf">1.0</span>
+    <span class="k">elif</span> <span class="n">units</span> <span class="o">==</span> <span class="s2">&quot;real&quot;</span><span class="p">:</span>
+        <span class="n">convert_epsilon</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mf">4.184</span>  <span class="c1"># Convert from kJ/mol to kcal/mol</span>
+        <span class="n">convert_sigma</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># Convert from nm to angstroms</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;`units` can be &#39;real&#39;, &#39;lj&#39;, or None.&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">filetype</span> <span class="o">==</span> <span class="s2">&quot;json&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="n">data_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="s2">&quot;File, </span><span class="si">{}</span><span class="s2">, does not exist.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">filename</span><span class="p">))</span>
+
+    <span class="n">types</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">atom</span><span class="o">.</span><span class="n">type</span> <span class="k">for</span> <span class="n">atom</span> <span class="ow">in</span> <span class="n">structure</span><span class="o">.</span><span class="n">atoms</span><span class="p">]))</span>
+
+    <span class="k">for</span> <span class="n">name1</span><span class="p">,</span> <span class="n">tmp_dict</span> <span class="ow">in</span> <span class="n">data_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">name1</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">name2</span><span class="p">,</span> <span class="n">param_dict</span> <span class="ow">in</span> <span class="n">tmp_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">name2</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
+                    <span class="n">structure</span> <span class="o">=</span> <span class="n">foyer_apply_nbfix</span><span class="p">(</span>
+                        <span class="n">struct</span><span class="o">=</span><span class="n">structure</span><span class="p">,</span>
+                        <span class="n">atom_type1</span><span class="o">=</span><span class="n">name1</span><span class="p">,</span>
+                        <span class="n">atom_type2</span><span class="o">=</span><span class="n">name2</span><span class="p">,</span>
+                        <span class="n">sigma</span><span class="o">=</span><span class="n">param_dict</span><span class="p">[</span><span class="s2">&quot;sigma&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">convert_sigma</span><span class="p">,</span>
+                        <span class="n">epsilon</span><span class="o">=</span><span class="n">param_dict</span><span class="p">[</span><span class="s2">&quot;epsilon&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">convert_epsilon</span><span class="p">,</span>
+                    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">structure</span></div>
+
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">mBuild Polymer Builder 0.0.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">mbuild_polybuild.toolbox</a></li> 
+      </ul>
+    </div>
+
+  
+    <div class="footer" role="contentinfo">
+    &#169; Copyright : Works of NIST employees are not not subject to copyright protection in the United States.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+    </div>
+
+  <!-- Taken from https://www.filamentgroup.com/lab/html-includes/#another-demo%3A-including-another-html-file -->
+  <iframe src="../../_static/ntd2d_menu.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+  </body>
+</html>

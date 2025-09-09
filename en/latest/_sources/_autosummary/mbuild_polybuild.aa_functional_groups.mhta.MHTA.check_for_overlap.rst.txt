@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.mhta.MHTA.check\_for\_overlap
+======================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mhta
+
+.. automethod:: MHTA.check_for_overlap

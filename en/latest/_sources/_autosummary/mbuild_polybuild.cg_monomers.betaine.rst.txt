@@ -1,0 +1,38 @@
+betaine
+=======
+
+.. currentmodule:: mbuild_polybuild.cg_monomers.betaine
+
+mbuild_polybuild.cg_monomers.betaine
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.cg_monomers.betaine
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      Betaine
+   
+   
+
+   
+   
+   
+
+
+

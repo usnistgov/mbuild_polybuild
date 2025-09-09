@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.sulfonate.Sulfonate.particles\_in\_range
+=================================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.sulfonate
+
+.. automethod:: Sulfonate.particles_in_range

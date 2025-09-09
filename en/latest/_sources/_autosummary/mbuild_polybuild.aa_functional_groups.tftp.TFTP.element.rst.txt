@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_functional\_groups.tftp.TFTP.element
+==========================================================
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.tftp
+
+.. autoproperty:: TFTP.element

@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.acrylamide.Acrylamide.check\_for\_overlap
+========================================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.acrylamide
+
+.. automethod:: Acrylamide.check_for_overlap

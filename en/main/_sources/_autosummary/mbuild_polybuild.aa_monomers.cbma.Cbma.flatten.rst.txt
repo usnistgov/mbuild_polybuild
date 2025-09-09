@@ -1,0 +1,6 @@
+mbuild\_polybuild.aa\_monomers.cbma.Cbma.flatten
+================================================
+
+.. currentmodule:: mbuild_polybuild.aa_monomers.cbma
+
+.. automethod:: Cbma.flatten

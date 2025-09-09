@@ -1,0 +1,38 @@
+mhta
+====
+
+.. currentmodule:: mbuild_polybuild.aa_functional_groups.mhta
+
+mbuild_polybuild.aa_functional_groups.mhta
+
+.. rubric:: Description
+
+.. automodule:: mbuild_polybuild.aa_functional_groups.mhta
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: class.rst
+      :nosignatures:
+   
+      MHTA
+   
+   
+
+   
+   
+   
+
+
+
