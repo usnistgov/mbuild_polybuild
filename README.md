@@ -17,7 +17,7 @@ Certain commercial equipment, instruments, or materials are identified in this p
 
 ## Summary
 
-This mbuild recipe allows for the generation of complex monomers with controlled tacticity. DOI: [10.18434/mds2-3640](10.18434/mds2-3640)
+This mbuild recipe allows for the generation of complex monomers with controlled tacticity. DOI: [10.18434/mds2-3640](https://doi.org/10.18434/mds2-3640)
 
 mbuild_polybuild is bound by a [Code of Conduct](https://github.com/usnistgov/mbuild_polybuild/blob/main/CODE_OF_CONDUCT.md).
 
