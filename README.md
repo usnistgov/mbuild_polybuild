@@ -21,7 +21,9 @@ This mbuild recipe allows for the generation of complex monomers with controlled
 
 mbuild_polybuild is bound by a [Code of Conduct](https://github.com/usnistgov/mbuild_polybuild/blob/main/CODE_OF_CONDUCT.md).
 
-### [Check out the documentation][docs4nist]
+## Documentation
+
+Online: [NIST Pages][docs4nist]
 
 ## Dependencies
 
